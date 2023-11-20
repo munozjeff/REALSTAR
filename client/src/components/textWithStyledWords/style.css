@@ -1,0 +1,11 @@
+.paragraph-with-style{
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(0.1rem,1.5vw,1.2rem);
+    color: black;
+    padding: 0;
+    padding-bottom: 40px;
+    margin: 0;
+    flex: 1;
+    font-weight: 500;
+    /* box-sizing: border-box; */
+}

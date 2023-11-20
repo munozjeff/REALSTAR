@@ -28,31 +28,16 @@
 }
 .banner-info{
     padding: 0 0 0 5vw;
+    
+}
+.banner-info>div{
     display: flex;
     flex-direction: column;
     align-items: start;
+    height: 100%;
 }
 .banner-info.invest{
     padding: 0 5vw 0 0;
-}
-.banner-info>p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: clamp(0.1rem,1.5vw,1.2rem);
-    color: black;
-    padding: 0;
-    padding-bottom: 40px;
-    margin: 0;
-    flex: 1;
-}
-.banner-info>input{
-    width: 150px;
-    height: 45px;
-    border-radius: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    color: white;
-    background-color: #FF8300;
-    border: none;
 }
 .banner-title{
     color: black;

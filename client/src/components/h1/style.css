@@ -1,0 +1,8 @@
+.h1-custom{
+    font-size: 2.8rem;
+    color: black;
+    font-weight: 900;
+    font-family: 'Montserrat black', sans-serif;
+    /* flex: 1; */
+    margin: 0 0 auto 0;
+}

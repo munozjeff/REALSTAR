@@ -1,10 +1,25 @@
-.landingpage-section-one{
+.landingpage-section-two{
     background-image: url("/src/assets/Logos/Logos_Real_Star-04.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     max-width: max-content;
 }
-.landingpage-section-one-container{
+.landingpage-section-two-container{
     background-color: rgba(240, 248, 255, 0.891);
+}
+.landingpage-section-one{
+    width: 100%;
+}
+.landingpage-title{
+    width: 40%;
+}
+.landingpage-title>h1{
+    font-size: 2.8rem;
+    color: black;
+    font-weight: 900;
+    font-family: 'Montserrat black', sans-serif;
+}
+.landingpage-section-one-carousel{
+    width: 60%;
 }
