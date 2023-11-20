@@ -1,0 +1,38 @@
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    height: 4vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.options-container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.options-container li{
+    list-style: none;
+    
+    
+}
+.options-container li a{
+    color: black;
+    cursor: pointer;
+}
+.options-container li a:hover{
+    border-bottom: 2px solid #FF9700;
+}
+
+
+.header-logo{
+    height: 4rem;
+
+}
+.header-logo img{
+    object-fit: cover;
+    height: 100%;
+}
