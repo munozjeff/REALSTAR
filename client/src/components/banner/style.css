@@ -10,7 +10,6 @@
 .banner-section{
     height: auto;
     box-sizing: border-box;
-    background-color: blueviolet;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,4 +53,9 @@
     color: white;
     background-color: #FF8300;
     border: none;
+}
+.banner-title{
+    color: black;
+    font-weight: bold;
+    width: 300px;
 }
