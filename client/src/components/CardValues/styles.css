@@ -1,0 +1,27 @@
+.card-value-container{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 18rem;
+    padding: 2rem 2rem;
+    background: white;
+    
+
+
+}
+
+.value-title h2{
+    color: black;
+
+}
+.value-description p{
+    color: black;
+
+}
+
+.card-value-img-container img{
+    width: 20%;
+    object-fit:cover;
+    margin: 0;
+    padding: 0;
+}

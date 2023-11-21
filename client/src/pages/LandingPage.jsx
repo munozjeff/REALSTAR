@@ -10,6 +10,7 @@ import { H3 } from '../components/h3/H3'
 import { H4 } from '../components/h4/H4'
 import { TextWithStyledWords } from '../components/textWithStyledWords/TextWithStyledWords'
 import { Carousel } from '../components/Carousel/Carousel'
+import { CardValues } from '../components/CardValues/CardValues'
 
 
 
@@ -58,6 +59,28 @@ export const LandingPage = () => {
                     </div>
                 </Banner>
             </div>
+        </section>
+
+        <section className='values-section'>
+
+            <div className='main-title-value'>
+                <h2>MISIÓN Y VISIÓN</h2>
+            </div>
+
+            <div className='values-cards-container'>
+                <CardValues imageRoute="/src/assets/icons/Iconos-01.png" title="Misión" 
+                description="Contribuir al desarrollo humano integral y
+                generar bienestar a la población colombiana a
+                través de la promoción del deporte, la recreación
+                y la actividad física." />
+
+                <CardValues imageRoute="/src/assets/icons/Iconos-02.png" title="Visión" 
+                description="Contribuir al desarrollo humano integral y
+                generar bienestar a la población colombiana a
+                través de la promoción del deporte, la recreación
+                y la actividad física." />
+            </div>
+           
         </section>
         
     </>
