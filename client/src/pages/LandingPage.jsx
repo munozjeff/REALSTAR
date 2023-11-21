@@ -10,6 +10,8 @@ import { H3 } from '../components/h3/H3'
 import { H4 } from '../components/h4/H4'
 import { TextWithStyledWords } from '../components/textWithStyledWords/TextWithStyledWords'
 import { Carousel } from '../components/Carousel/Carousel'
+import { OpacityMask } from '../components/opacityMask/OpacityMask'
+import { CardModelOne } from '../components/cardModelOne/CardModelOne'
 
 
 
@@ -59,7 +61,23 @@ export const LandingPage = () => {
                 </Banner>
             </div>
         </section>
-        
+        <section className='landingpage-section-three'>
+            <OpacityMask>
+                <H2 value={"MISIÓN Y VISIÓN"} color={"white"}></H2>
+                <div className='landingpage-section-three-card-container'>
+                    <CardModelOne 
+                        title={"Misión"} 
+                        paragraph={"Contribuir al desarrollo humano integral y generar bienestar a la población colombiana a través de la promoción del deporte, la recreación y la actividad física."}
+                        image={"/src/assets/icons/Iconos-01.png"}
+                        />
+                    <CardModelOne
+                        title={"Visión"}
+                        paragraph={"Alcanzar el desarrollo social sostenible en Colombia a través del deporte, la recreación y la actividad física."}
+                        image={"/src/assets/icons/Iconos-02.png"}
+                        />
+                </div>
+            </OpacityMask>
+        </section>
     </>
   )
 }

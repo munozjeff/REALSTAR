@@ -1,0 +1,24 @@
+.card-model-one{
+    width: 40%;
+    height: auto;
+    background-color: white;
+    display: inline-block;
+    text-align: left;
+    margin: 0 10px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.card-model-one>img{
+    width: 80px;
+    height: auto;
+}
+.card-model-one>p{
+    color: black;
+    font-family: 'montserrat','';
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+.card-model-one>h3{
+    color: black;
+}

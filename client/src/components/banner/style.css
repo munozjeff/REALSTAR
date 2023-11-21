@@ -1,9 +1,8 @@
 .banner-article{
     width: 100%;
-    height: auto;
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
+    margin: 100px 0;
 }
 .invest:nth-child(1) { order: 2; }
 .invest:nth-child(2) { order: 1; }
@@ -39,8 +38,8 @@
 .banner-info.invest{
     padding: 0 5vw 0 0;
 }
-.banner-title{
+/* .banner-title{
     color: black;
     font-weight: bold;
     width: 300px;
-}
+} */
