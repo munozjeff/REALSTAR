@@ -27,7 +27,7 @@ html{
 body{
   width: 100%;
   margin: 0;
-  padding: 0 10%;
+  padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
   background-color: white;

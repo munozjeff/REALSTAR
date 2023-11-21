@@ -8,8 +8,10 @@
 .landingpage-section-two-container{
     background-color: rgba(240, 248, 255, 0.891);
 }
-.landingpage-section-one{
+.landingpage-section{
     width: 100%;
+    padding: 0 10%;
+    box-sizing: border-box;
 }
 .landingpage-title{
     width: 40%;
@@ -20,6 +22,6 @@
     font-weight: 900;
     font-family: 'Montserrat black', sans-serif;
 }
-.landingpage-section-one-carousel{
+/* .landingpage-section-one-carousel{
     width: 60%;
-}
+} */

@@ -9,6 +9,7 @@ import { H2 } from '../components/h2/H2'
 import { H3 } from '../components/h3/H3'
 import { H4 } from '../components/h4/H4'
 import { TextWithStyledWords } from '../components/textWithStyledWords/TextWithStyledWords'
+import { Carousel } from '../components/Carousel/Carousel'
 
 
 
@@ -21,16 +22,25 @@ export const LandingPage = () => {
     return (
     <>
         <Header/>
-        <section className='landingpage-section-one'>
+
+        <div>
+            
+        </div>
+
+        <section className='landingpage-section-one landingpage-section'>
             <Banner invest={true}>
-                <CardBanner image="/src/assets/images/IMG_0433.jpg"/>
+                <Carousel auto={true}> 
+                    <CardBanner image="/src/assets/images/IMG_0433.jpg"/>
+                    <CardBanner image="/src/assets/images/IMG_0433.jpg"/>
+                    <CardBanner image="/src/assets/images/IMG_0433.jpg"/>
+                </Carousel>
                 <div>
                     <H1 value={"JUNTOS CONSTRUIMOS HISTORIAS DE VIDA EXITOSAS"}></H1>
                     <ButtonSeeMore value={"CONOCE MÁS"} color='#ff0019'/>
                 </div>
             </Banner>
         </section>
-        <section className='landingpage-section-two'>
+        <section className='landingpage-section-two landingpage-section' >
             <div className='landingpage-section-two-container'>
                 <Banner>
                     <CardBanner image="/src/assets/images/IMG_0433.jpg"/>
