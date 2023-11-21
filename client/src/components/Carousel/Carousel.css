@@ -1,0 +1,33 @@
+#carouselContainer{
+    overflow: hidden;
+    max-width: 100vw;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+#itemsContainer{
+    text-wrap: nowrap;
+}
+.itemContainer{
+    display: inline-block;
+}
+.carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.button-carousel{
+    position: absolute;
+    width:30px;
+    height:30px;
+}
+.button-carousel-next{
+    right: 0;
+    background-image: url("/src/assets/icons/angle-right.png");
+}
+.button-carousel-prev{
+    left: 0;
+    background-image: url("/src/assets/icons/angle-left.png");
+}
