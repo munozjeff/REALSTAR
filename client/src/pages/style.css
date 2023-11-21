@@ -16,11 +16,19 @@
 .landingpage-title{
     width: 40%;
 }
-.landingpage-title>h1{
-    font-size: 2.8rem;
-    color: black;
-    font-weight: 900;
-    font-family: 'Montserrat black', sans-serif;
+.landingpage-section-three{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/src/assets/images/IMG_0403.jpg");
+    background-size: cover;
+    margin-top: 100px;
+}
+.landingpage-section-three-card-container{
+    display: flex;
+    justify-content: center;
+}
+.landingpage-section-three h2{
+    margin-bottom: 50px;
 }
 /* .landingpage-section-one-carousel{
     width: 60%;
@@ -33,7 +41,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('/src/assets/images/IMG_0403.jpg') ;
+    background-image: url('/src/assets/images/IMG_0403_dark.png') ;
     background-size: cover;
     background-position: center;
     width: 100%;
