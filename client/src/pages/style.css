@@ -65,3 +65,11 @@
     gap: 1rem;
     flex-wrap: nowrap;
 }
+
+.our-programs>div{
+    display: flex;
+    justify-content: space-around;
+}
+.our-programs>h2{
+    text-align: center;
+}

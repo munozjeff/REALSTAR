@@ -1,6 +1,15 @@
 .h3-custom{
     color: black;
-    font-family: 'Lilita One', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin: 0;
+    /* padding: 0; */
+    /* height: 20px; */
+    line-height: 1;
+    /* text-align: center; */
+    box-sizing: border-box;
+
+}
+.h3-custom::after{
 }

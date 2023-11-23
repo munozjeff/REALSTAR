@@ -13,6 +13,7 @@ import { Carousel } from '../components/Carousel/Carousel'
 import { OpacityMask } from '../components/opacityMask/OpacityMask'
 import { CardModelOne } from '../components/cardModelOne/CardModelOne'
 import { CardValues } from '../components/CardValues/CardValues'
+import { CardPrograms } from '../components/cardPrograms/CardPrograms'
 
 
 export const LandingPage = () => {
@@ -99,6 +100,14 @@ export const LandingPage = () => {
                         />
                 </div>
             </OpacityMask>
+        </section>
+        <section className='our-programs landingpage-section'>
+            <H2 value={"NUESTROS PROGRAMAS"} color={"#FF8300"}></H2>
+            <div>
+                <CardPrograms title={"SEMILLEROS"} subtitle={"DEPORTIVOS"}/>
+                <CardPrograms title={"FORMANDO"} subtitle={"FORMADORES"}/>
+                <CardPrograms title={"INTEGRACIÓN"} subtitle={"SOCIAL"}/>
+            </div>
         </section>
     </>
   )
