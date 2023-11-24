@@ -198,11 +198,8 @@ export const LandingPage = () => {
                 />
 
                 <p className='problem-and-solution-p'  >
-                Para orientar y acompañar el desarrollo humano integral de los grupos de valor objetivo de intervención y
-                lograr su propósito misional (Construir al desarrollo humano integral de las personas y generar bienestar a
-                las familias colombianas a través de la promoción del deporte, la recreación y la
-                actividad física), aplica (2) dos ejes estratégicos y (6) seis componentes que apropiados por las personas
-                atendidas facilitan las capacidades necesarias para transformar su realidad y contribuir al desarrollo local de
+                Para orientar y acompañar el desarrollo humano integral de los grupos de valor objetivo de intervención y lograr su propósito misional (Construir al desarrollo humano integral de las personas y generar bienestar a las familias colombianas a través de la promoción del deporte, la recreación y la
+                actividad física), aplica (2) dos ejes estratégicos y (6) seis componentes que apropiados por las personas atendidas facilitan las capacidades necesarias para transformar su realidad y contribuir al desarrollo local de
                 su territorio.
                 </p>
         
