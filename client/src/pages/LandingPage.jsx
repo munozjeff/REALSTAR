@@ -14,6 +14,7 @@ import { OpacityMask } from '../components/opacityMask/OpacityMask'
 import { CardModelOne } from '../components/cardModelOne/CardModelOne'
 import { CardValues } from '../components/CardValues/CardValues'
 import { CardPrograms } from '../components/cardPrograms/CardPrograms'
+import { ImageandText } from '../components/ImageandText/ImageandText'
 
 
 export const LandingPage = () => {
@@ -178,6 +179,37 @@ export const LandingPage = () => {
 
             </div>
         </section>
+
+        <section className='problem-and-solution'>
+            <ImageandText
+                    imageRoute="/src/assets/icons/Asset-3.png"
+                    title="El problema"
+                    paragraph="El Informe Nacional sobre Desarrollo Humano para Colombia ha señalado “En Colombia, en relación con las dimensiones del Índice de Desarrollo Humano, hubo un alto impacto en salud por el exceso de mortalidad, un freno al avance en los indicadores de educación y una caída en la dimensión del ingreso, con un deterioro relevante en la brecha de ingreso entre hombres y mujeres. Adicionalmente, frente al desarrollo humano persisten las pérdidas a causa, principalmente, de la desigualdad y por presiones planetarias”. Estudio realizado para     Colombia por PNUD y el Reino de Suecia, Año 2022."
+
+
+                />
+            <ImageandText
+                    imageRoute="/src/assets/icons/Asset-2.png"
+                    title="La solución"
+                    paragraph="La CORPORACIÓN REAL STAR, desde su filantropía alinea su actuar con el firme propósito de potenciar las capacidades de sus grupos de valor, que les permita facilitarse más oportunidades para gestionar y lograr sus metas de vida y mejorar su calidad de vida. Los programas y proyectos a través de los cuales busca lograr su propósito superior centran sus bases en la promoción del deporte, la recreación y la actividad física, como punto de partida para dotar a la población intervenida de habilidades y/o cualidades para su desarrollo humano
+                    integral."
+
+
+                />
+
+                <p className='problem-and-solution-p'  >
+                Para orientar y acompañar el desarrollo humano integral de los grupos de valor objetivo de intervención y
+                lograr su propósito misional (Construir al desarrollo humano integral de las personas y generar bienestar a
+                las familias colombianas a través de la promoción del deporte, la recreación y la
+                actividad física), aplica (2) dos ejes estratégicos y (6) seis componentes que apropiados por las personas
+                atendidas facilitan las capacidades necesarias para transformar su realidad y contribuir al desarrollo local de
+                su territorio.
+                </p>
+        
+        </section>
     </>
+
+
+    
   )
 }

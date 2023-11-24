@@ -13,7 +13,7 @@ function Header(){
                    <div>
                         <ul className="options-container" >
                             <li>
-                                <a>LA CORPORACION</a> 
+                                <a>LA CORPORACIÓN</a> 
                             </li>
                             <li>
                                 <a>NUESTROS PROGRAMAS</a> 
