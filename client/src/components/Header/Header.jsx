@@ -4,7 +4,7 @@ import './styles.css'
 function Header(){
     return(
         <>
-            <footer className="footer-container">
+            <header className="header-container">
                 <div className="header-logo">
                     <img src="/src/assets/Logos/Logos Real Star-03.png" alt="image-logo" />
 
@@ -34,7 +34,7 @@ function Header(){
                 </div>
 
 
-            </footer>
+            </header>
         </>
     )
 }

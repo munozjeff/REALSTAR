@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 .h2-custom{
     color: black;
-    font-family: "montserrat black","sans-serif";
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
 }

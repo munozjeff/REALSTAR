@@ -1,11 +1,16 @@
-.footer-container{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+.header-container{
     display: flex;
     flex-direction: row;
-    height: 4vh;
+    height: 10vh;
     width: 100vw;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    font-weight: bold;
+    padding-top: 2rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
 }
 .options-container{
     display: flex;
@@ -29,7 +34,7 @@
 
 
 .header-logo{
-    height: 4rem;
+    height: 75%;
 
 }
 .header-logo img{

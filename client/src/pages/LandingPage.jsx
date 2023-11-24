@@ -63,7 +63,7 @@ export const LandingPage = () => {
             </div>
         </section>
 
-        <section className='values-section'>
+        {/* <section className='values-section'>
 
             <div className='main-title-value'>
                 <h2>MISIÓN Y VISIÓN</h2>
@@ -83,7 +83,7 @@ export const LandingPage = () => {
                 y la actividad física." />
             </div>
            
-        </section>
+        </section> */}
         <section className='landingpage-section-three'>
             <OpacityMask>
                 <H2 value={"MISIÓN Y VISIÓN"} color={"white"}></H2>
