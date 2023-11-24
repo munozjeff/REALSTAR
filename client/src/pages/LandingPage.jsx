@@ -101,12 +101,81 @@ export const LandingPage = () => {
                 </div>
             </OpacityMask>
         </section>
-        <section className='our-programs landingpage-section'>
-            <H2 value={"NUESTROS PROGRAMAS"} color={"#FF8300"}></H2>
+        <section className='our-programs'>
             <div>
-                <CardPrograms title={"SEMILLEROS"} subtitle={"DEPORTIVOS"}/>
-                <CardPrograms title={"FORMANDO"} subtitle={"FORMADORES"}/>
-                <CardPrograms title={"INTEGRACIÓN"} subtitle={"SOCIAL"}/>
+                <H2 value={"NUESTROS PROGRAMAS"} color={"#FF8300"}></H2>
+                <div className='our-programs-cards-container'>
+                    <CardPrograms title={"SEMILLEROS"} subtitle={"DEPORTIVOS"}/>
+                    <CardPrograms title={"FORMANDO"} subtitle={"FORMADORES"}/>
+                    <CardPrograms title={"INTEGRACIÓN"} subtitle={"SOCIAL"}/>
+                </div>
+            </div>
+        </section>
+        <section className='landingpage-section-three section-Join'>
+            <OpacityMask>
+                <H2 value={"SÚMATE"} color={"white"}></H2>
+                <div className='section-Join-paragraph-container'>
+                    <p>
+                        Sumamos esfuerzos para que cada día sean mas las historias 
+                        de vida exitosas en Colombia, ahora es el momento
+                    </p>
+                    <p>
+                        ¡Tus aportes suman!
+                    </p>
+                </div>
+                <ButtonSeeMore value='DONAR' color='#FF8300'/>
+                <ButtonSeeMore value='ALIARSE' color='#FF8300'/>
+            </OpacityMask>
+        </section>
+        <section className='landingpage-section section-WhoWeAre'>
+            <H2 value={"QUIÉNES SOMOS"} color={"#FF8300"}/>
+            <TextWithStyledWords 
+                paragraph='Corporación Real Star, es una organización sin fines de lucro que 
+                            propicia el desarrollo humano integral de las personas, genera 
+                            bienestar a las familias y contribuye al desarrollo social de las 
+                            comunidades, teniendo como base la promoción del deporte, la recreación 
+                            y la actividad física.'
+
+            />
+            <Banner bannerModel={2} >
+                <CardBanner image={"/src/assets/images/IMG_0441.jpg"}/>
+                <TextWithStyledWords 
+                    paragraph='A partir del 2018 (Año en que se fundó la organización), 
+                                lideramos estrategias deportivas, recreativas y de 
+                                actividad física que posibilitan a nuestros grupos de 
+                                valor adquirir habilidades para afrontar los retos que 
+                                les impiden alcázar sus metas de vida, aplicar hábitos 
+                                de autocuidado y cuidado del medio ambiente y ser 
+                                personas capaces mantener relaciones interpersonales 
+                                asertivas, reconociendo sus derechos, deberes y 
+                                responsabilidades. Nuestros programas/proyectos son 
+                                rutas atractivas e innovadoras para lograr el desarrollo 
+                                social de las comunidades en las que hacemos 
+                                intervención.'
+                />
+            </Banner>
+            <Banner bannerModel={2} invest={true}>
+                <CardBanner image={"/src/assets/images/IMG_0479.jpg"}/>
+                <div>
+                    <H2 value={"Lo que más nos motiva"} color={"#ff0019"}/>
+                    <TextWithStyledWords 
+                        paragraph='Nos mueve la necesidad desarrollar acciones que 
+                                    contrarresten problemáticas derivadas de las 
+                                    inequidades sociales y las diferentes formas exclusión 
+                                    social, dando la posibilidad a los grupos de 
+                                    intervención a que, a partir de la apropiación de 
+                                    habilidades y herramientas facilitadas en el marco de 
+                                    la promoción del deporte, la recreación y la actividad 
+                                    física logren orientar sus acciones de forma acertada 
+                                    con miras a mejorar su calidad de vida'
+                    />
+                </div>
+            </Banner>
+        </section>
+        <section className='our-method-of-intervention-section'>
+            <H2 value={"NUESTRO MÉTODO DE INTERVENCIÓN"} color={"white"}></H2>
+            <div>
+
             </div>
         </section>
     </>
