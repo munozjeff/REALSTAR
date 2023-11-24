@@ -124,6 +124,9 @@
 .section-WhoWeAre{
     margin-top: 100px;
 }
+.section-WhoWeAre>p:first-of-type{
+    margin-bottom: 50px;
+}
 .section-WhoWeAre h2{
     text-align: center;
 }
