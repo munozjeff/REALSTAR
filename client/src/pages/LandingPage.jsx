@@ -175,7 +175,7 @@ export const LandingPage = () => {
         </section>
         <section className='our-method-of-intervention-section'>
             <H2 value={"NUESTRO MÉTODO DE INTERVENCIÓN"} color={"white"}></H2>
-            <div>
+            <div className='our-method-of-intervention-section-background-image'>
 
             </div>
         </section>
