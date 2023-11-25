@@ -15,6 +15,7 @@ import { CardModelOne } from '../components/cardModelOne/CardModelOne'
 import { CardValues } from '../components/CardValues/CardValues'
 import { CardPrograms } from '../components/cardPrograms/CardPrograms'
 import { ImageandText } from '../components/ImageandText/ImageandText'
+import { SectionFullWidth } from '../components/sectionfullWidth/SectionFullWidth'
 
 
 export const LandingPage = () => {
@@ -173,12 +174,17 @@ export const LandingPage = () => {
                 </div>
             </Banner>
         </section>
-        <section className='our-method-of-intervention-section'>
+        {/* <section className='our-method-of-intervention-section section-full-width' >
             <H2 value={"NUESTRO MÉTODO DE INTERVENCIÓN"} color={"white"}></H2>
             <div className='our-method-of-intervention-section-background-image'>
 
             </div>
-        </section>
+        </section> */}
+        <SectionFullWidth 
+                image={"/src/assets/images/Metodo_De_Intervencion.png"} 
+                title={"NUESTRO MÉTODO DE INTERVENCIÓN"}
+                titleColor={"white"}
+                backgroundColor={"black"}/>
 
         <section className='problem-and-solution'>
             <ImageandText
@@ -204,6 +210,17 @@ export const LandingPage = () => {
                 </p>
         
         </section>
+        <SectionFullWidth 
+                image={"/src/assets/images/Metodo_De_Intervencion.png"} 
+                title={"ORGANIGRAMA"}
+                titleColor={"#FF8300"}
+                backgroundColor={"black"}/>
+
+        <SectionFullWidth 
+                        image={"/src/assets/images/Metodo_De_Intervencion.png"} 
+                        title={"NUESTRA GESTIÓN"}
+                        titleColor={"#FF8300"}
+                        backgroundColor={"white"}/>
     </>
 
 
