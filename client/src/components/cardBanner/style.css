@@ -5,10 +5,19 @@
   display: flex;
   justify-content: center;
   overflow: hidden;
+  position: relative;
 }
-.card-banner>img{
+.card-banner-img{
     width: 100%;
     object-fit:cover;
     margin: 0;
     padding: 0;
+}
+.card-banner-logo{
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
