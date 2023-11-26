@@ -108,7 +108,10 @@
     font-size: 1.3rem;
     font-weight: 500;
     max-width: 900px;
+    width: 90vw;
     text-align: center;
+    font-size: clamp(0.1rem,5vw,1.3rem);
+    /* margin: 0; */
     /*  display: flex;
     flex-direction: column; */
 }
@@ -121,33 +124,31 @@
 .section-Join input:last-of-type{
     margin-bottom: 50px;
 }
+.section-WhoWeAre{
+    margin: 100px 0;
+}
+.section-WhoWeAre>p:first-of-type{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
 .section-WhoWeAre h2{
     text-align: center;
+    margin: 0 0 20px 0;
 }
-.section-WhoWeAre article:first-of-type{
-    margin-top: 0;
-}
-.our-method-of-intervention-section{
-    width: 100%;
-    height: 100vh;
+/* .section-WhoWeAre article:first-of-type{
+    margin: 0;
+    margin-bottom: 40px;
+} */
+/* 
+.section-WhoWeAre article:last-of-type{
+    margin: 0;
     margin-top: 100px;
-    background-color: black;
-}
-.our-method-of-intervention-section>h2{
-    text-align: center;
-}
-.our-method-of-intervention-section>div{
-    width: 100%;
-    height: 100%;
-    background-image: url("/src/assets/images/Metodo_De_Intervencion.png");
-    background-size: cover;
-}
+} */
 /* .section-WhoWeAre p{
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(0.1rem,1.5vw,1.2rem);
     color: black;
 } */
-
 
 /* Problem and solution */
 .problem-and-solution{

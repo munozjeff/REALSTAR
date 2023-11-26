@@ -1,12 +1,15 @@
 .card-programs{
-    width: 350px;
-    height: 300px;
+    min-width: 350px;
+    min-height: 300px;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    margin: 10px;
+    max-width: 500px;
 }
 .card-programs>div{
     flex: 1;
@@ -24,4 +27,7 @@
     font-weight: 500;
     font-size: 1rem;
     font-family: "montserrat","sans-serif";
+}
+.card-programs>div>h2{
+    width: 80%;
 }
