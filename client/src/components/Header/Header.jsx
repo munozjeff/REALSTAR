@@ -4,7 +4,7 @@ import './styles.css'
 function Header(){
     return(
         <>
-            <header className="header-container">
+            <header className="header-container"> 
                 <div className="header-logo">
                     <img src="/src/assets/Logos/Logos Real Star-03.png" alt="image-logo" />
 
@@ -13,16 +13,16 @@ function Header(){
                    <div>
                         <ul className="options-container" >
                             <li>
-                                <a>LA CORPORACIÓN</a> 
+                                <a href="#section1">LA CORPORACIÓN</a> 
                             </li>
                             <li>
-                                <a>NUESTROS PROGRAMAS</a> 
+                                <a href="#nuestros-programas">NUESTROS PROGRAMAS</a> 
                             </li>
                             <li>
-                                <a>QUIÉNES SOMOS</a> 
+                                <a href="#section-somos">QUIÉNES SOMOS</a> 
                             </li>
                             <li>
-                                <a>CONVOCATORIAS</a> 
+                                <a href="#convocatoria">CONVOCATORIAS</a> 
                             </li>
                             <li>
                                 <a>CONTÁCTANOS</a> 

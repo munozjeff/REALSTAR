@@ -2,20 +2,25 @@
 .header-container{
     display: flex;
     flex-direction: row;
-    height: 10vh;
-    width: 100vw;
-    justify-content: center;
+    height: 14vh;
+    width: 100%;
     align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     font-weight: bold;
-    padding-top: 2rem;
+    margin-bottom: 2rem;
     font-size: 0.9rem;
     font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    position: sticky;
+    top: 0; 
+    z-index: 100;
+
 }
 .options-container{
     display: flex;
     flex-direction: row;
-    align-content: center;
+    align-content: flex-end;
     gap: 1rem;
     flex-wrap: wrap;
 }
@@ -27,6 +32,7 @@
 .options-container li a{
     color: black;
     cursor: pointer;
+    text-decoration: none;
 }
 .options-container li a:hover{
     border-bottom: 2px solid #FF9700;
@@ -34,7 +40,8 @@
 
 
 .header-logo{
-    height: 75%;
+    height: 44%;
+    
 
 }
 .header-logo img{

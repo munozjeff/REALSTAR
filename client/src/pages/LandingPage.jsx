@@ -32,7 +32,7 @@ export const LandingPage = () => {
             
         </div>
 
-        <section className='landingpage-section-one landingpage-section'>
+        <section  id='section1' className='landingpage-section-one landingpage-section'>
             <Banner invest={true}>
                 <Carousel auto={true}> 
                     <CardBanner image="/src/assets/images/IMG_0433.jpg"/>
@@ -45,7 +45,7 @@ export const LandingPage = () => {
                 </div>
             </Banner>
         </section>
-        <section className='landingpage-section-two landingpage-section' >
+        <section id='section2' className='landingpage-section-two landingpage-section' >
             <div className='landingpage-section-two-container'>
                 <Banner>
                     <CardBanner image="/src/assets/images/IMG_0433.jpg"/>
@@ -103,7 +103,7 @@ export const LandingPage = () => {
                 </div>
             </OpacityMask>
         </section>
-        <section className='our-programs'>
+        <section id='nuestros-programas' className='our-programs'>
             <div>
                 <H2 value={"NUESTROS PROGRAMAS"} color={"#FF8300"}></H2>
                 <div className='our-programs-cards-container'>
@@ -113,7 +113,7 @@ export const LandingPage = () => {
                 </div>
             </div>
         </section>
-        <section className='landingpage-section-three section-Join'>
+        <section id='convocatoria' className='landingpage-section-three section-Join'>
             <OpacityMask>
                 <H2 value={"SÚMATE"} color={"white"}></H2>
                 <div className='section-Join-paragraph-container'>
@@ -129,7 +129,7 @@ export const LandingPage = () => {
                 <ButtonSeeMore value='ALIARSE' color='#FF8300'/>
             </OpacityMask>
         </section>
-        <section className='landingpage-section section-WhoWeAre'>
+        <section id='section-somos' className='landingpage-section section-WhoWeAre'>
             <H2 value={"QUIÉNES SOMOS"} color={"#FF8300"}/>
             <TextWithStyledWords 
                 paragraph='Corporación Real Star, es una organización sin fines de lucro que 
