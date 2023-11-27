@@ -16,6 +16,7 @@ import { CardValues } from '../components/CardValues/CardValues'
 import { CardPrograms } from '../components/cardPrograms/CardPrograms'
 import { ImageandText } from '../components/ImageandText/ImageandText'
 import { SectionFullWidth } from '../components/sectionfullWidth/SectionFullWidth'
+import { Footer } from '../components/Footer/Footer'
 
 
 export const LandingPage = () => {
@@ -232,6 +233,7 @@ export const LandingPage = () => {
                 </div>
             </div>
         </section>
+        <Footer/>
     </>
 
 

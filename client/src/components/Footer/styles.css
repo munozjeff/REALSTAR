@@ -1,17 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 footer{
     display: flex;
     flex-direction: row;
+    background-color: black;
+    justify-content: space-evenly;
+    gap: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
-
+.footer-img{
+    height: 11rem;
+}
+.footer-img img{
+    object-fit: cover;
+    height: 100%;
+}
 .footer-options li a{
     color: white;
     cursor: pointer;
     text-decoration: none;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.footer-options li{
+    list-style: none;
+    
 }
 .footer-contact-info{
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .column-3{
     display: flex;
@@ -20,5 +41,25 @@ footer{
 .logos-container-footer div{
     display: flex;
     flex-direction: row;
+    padding-bottom: 15px;
     
+    
+}
+.logos-container-footer img{
+    margin-right: 15px;
+}
+.logos-container-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-media-footer{
+    display: flex;
+    gap: 2rem;
+    height: 2.3rem;
+
+}
+.social-media-footer img{
+    object-fit: cover;
+    height: 100%;
 }

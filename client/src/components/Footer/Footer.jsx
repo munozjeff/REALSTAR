@@ -36,11 +36,11 @@ function Footer(){
 
                             <div>
                                     <img src="/src/assets/Logos/Asset 8.png"/>
-                                    <p></p>
+                                    <a href="mailto:comunicaciones@corporacionrealstar.org">comunicaciones@corporacionrealstar.org</a>
                             </div>
                             <div>
                                     <img src="/src/assets/Logos/Asset 7.png"/>
-                                    <p></p>
+                                    <a href="tel:+573245428745">(+57) 324 5428745</a>
                             </div>
 
                         </div>
