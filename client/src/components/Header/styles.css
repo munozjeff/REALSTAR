@@ -2,10 +2,10 @@
 .header-container{
     display: flex;
     flex-direction: row;
-    height: 14vh;
+    height: 80px;
     width: 100%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     font-weight: bold;
     margin-bottom: 2rem;
@@ -13,28 +13,19 @@
     font-family: 'Montserrat', sans-serif;
     background-color: #fff;
     position: sticky;
-    top: 0; 
+    top: 0;
     z-index: 100;
 
 }
-.options-container{
-    display: flex;
-    flex-direction: row;
-    align-content: flex-end;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-.options-container li{
-    list-style: none;
-    
-    
-}
-.options-container li a{
+
+nav a{
     color: black;
     cursor: pointer;
     text-decoration: none;
+    margin-right: 1rem;
+
 }
-.options-container li a:hover{
+nav a:hover{
     border-bottom: 2px solid #FF9700;
 }
 
@@ -47,4 +38,60 @@
 .header-logo img{
     object-fit: cover;
     height: 100%;
+}
+
+/* ---------Hamburger Menu ------*/
+header .nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+    display: none;
+}
+
+@media only screen and (max-width:1024px){
+    header .nav-btn{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+    header nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: white;
+        transition: 1s;
+        transform: translateY(-100vh);
+
+    }
+
+    header .responsive_nav{
+        transform: none;
+    }
+
+    nav .nav-close-btn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+
+    }
+    nav a{
+        font-size: 1.5rem;
+    }
+
+
+
 }
