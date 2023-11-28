@@ -13,9 +13,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 10vw;
 }
 .banner-image-model-one{
     width: 52%;
+    
 }
 .banner-info-model-one{
     width: 48%;
@@ -28,7 +30,7 @@
 }
 .banner-info{
     padding: 0 0 0 5vw;
-    
+    min-width: 300px;
 }
 .banner-info>div{
     display: flex;
@@ -44,3 +46,25 @@
     font-weight: bold;
     width: 300px;
 } */
+@media screen and (width < 930px) {
+    .banner-article{
+        flex-wrap: wrap;
+    }
+    .banner-info{
+        padding:0;
+        min-width: 300px;
+    }
+    .banner-image-model-one{
+        width: 100%;
+        
+    }
+    .banner-info-model-one{
+        width: 100%;
+    }
+    .banner-image-model-two{
+        width: 100%;
+    }
+    .banner-info-model-two{
+        width: 100%;
+    }
+}

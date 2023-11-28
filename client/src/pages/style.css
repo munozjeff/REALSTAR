@@ -1,32 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-.landingpage-section-two{
-    background-image: url("/src/assets/Logos/Logos_Real_Star-04.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    max-width: max-content;
-}
-.landingpage-section-two-container{
-    background-color: rgba(240, 248, 255, 0.891);
-}
 .landingpage-section{
     width: 100%;
     padding: 0 10%;
     box-sizing: border-box;
 }
+.landingpage-section-one{
+    position: relative;
+}
+.landingpage-section-one-title-container>div{
+    display: flex;
+    flex-direction: column;
+}
+.landingpage-section-one h1{
+    flex: 1;
+}
+.landingpage-section-one-title-container{
+    background-image: url("/src/assets/Logos/Logos_Real_Star-04.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
+
+.landingpage-section-one-title-container>div{
+    background-color: rgba(240, 248, 255, 0.891);
+    width: 100%;
+    height: 100%;
+}
+
+.landingpage-section-two{
+    background-image: url("/src/assets/Logos/Logos_Real_Star-04.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+.landingpage-section-two-container{
+    background-color: rgba(240, 248, 255, 0.891);
+    margin: 0 10%;
+}
+
 .landingpage-title{
     width: 40%;
 }
 .landingpage-section-three{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background-image: url("/src/assets/images/IMG_0403.jpg");
     background-size: cover;
+    background-position: center;
     margin-top: 100px;
 }
 .landingpage-section-three-card-container{
     display: flex;
     justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .landingpage-section-three h2{
     margin-bottom: 50px;
@@ -69,7 +101,8 @@
 
 .our-programs{
     /* width: 100%; */
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background-image: url("/src/assets/Logos/Logos_Real_Star-04.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -81,12 +114,14 @@
     margin-top: 80px;
     display: flex;
     justify-content: space-around;
-    
+    flex-wrap: wrap;
 }
 .our-programs>div{
     width: 100%;
+    min-height: 100vh;
     height: 100%;
     padding: 0 10%;
+    padding-bottom: 10vw;
     background-color: rgba(240, 248, 255, 0.891);
     display: flex;
     flex-direction: column;
@@ -160,4 +195,25 @@
     font-size: clamp(0.1rem,1.5vw,1.2rem);
     font-family: 'Montserrat', sans-serif;
     margin-top: 4rem;
+}
+
+@media screen and (width < 960px) {
+    h1,h2,h3,h4{
+        text-align: center;
+        margin: auto;
+    }
+    p{
+        text-align: justify;
+        margin: auto;
+    }
+    .button-see-more{
+        margin: 10px auto;
+    }
+    .landingpage-section-one .button-see-more{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
 }

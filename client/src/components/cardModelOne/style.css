@@ -1,10 +1,12 @@
 .card-model-one{
+    max-width: 500px;
+    min-width: 300px;
     width: 40%;
     height: auto;
     background-color: white;
     display: inline-block;
     text-align: left;
-    margin: 0 10px;
+    margin: 10px;
     padding: 40px;
     box-sizing: border-box;
 }

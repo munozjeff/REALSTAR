@@ -40,9 +40,11 @@ export const LandingPage = () => {
                     <CardBanner image="/src/assets/images/IMG_0433.jpg"/>
                     <CardBanner image="/src/assets/images/IMG_0433.jpg"/>
                 </Carousel>
-                <div>
-                    <H1 value={"JUNTOS CONSTRUIMOS HISTORIAS DE VIDA EXITOSAS"}></H1>
-                    <ButtonSeeMore value={"CONOCE MÁS"} color='#ff0019'/>
+                <div className='landingpage-section-one-title-container'>
+                    <div>
+                        <H1 value={"JUNTOS CONSTRUIMOS HISTORIAS DE VIDA EXITOSAS"}></H1>
+                        <ButtonSeeMore value={"CONOCE MÁS"} color='#ff0019'/>
+                    </div>
                 </div>
             </Banner>
         </section>
