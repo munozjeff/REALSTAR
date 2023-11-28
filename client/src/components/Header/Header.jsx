@@ -1,37 +1,43 @@
 import React from "react";
 import './styles.css'
-
+import {FaBars, FaTimes} from "react-icons/fa"
+import {useRef} from "react"
 function Header(){
+
+    const navRef = useRef();
+    const showNavbar = ()=>{
+        navRef.current.classList.toggle("responsive_nav");
+    }
+
+
     return(
         <>
             <header className="header-container"> 
                 <div className="header-logo">
                     <img src="/src/assets/Logos/Logos Real Star-03.png" alt="image-logo" />
-
+                
                 </div>
-                <div className="menu-options">
-                   <div>
-                        <ul className="options-container" >
-                            <li>
-                                <a href="#section1">LA CORPORACIÓN</a> 
-                            </li>
-                            <li>
-                                <a href="#nuestros-programas">NUESTROS PROGRAMAS</a> 
-                            </li>
-                            <li>
-                                <a href="#section-somos">QUIÉNES SOMOS</a> 
-                            </li>
-                            <li>
-                                <a href="#convocatoria">CONVOCATORIAS</a> 
-                            </li>
-                            <li>
-                                <a>CONTÁCTANOS</a> 
-                            </li>
-                        </ul>
-                   </div>
+                <nav ref={navRef}>
 
+                        <a href="#section1">LA CORPORACIÓN</a> 
 
-                </div>
+                        <a href="#nuestros-programas">NUESTROS PROGRAMAS</a> 
+
+                        <a href="#section-somos">QUIÉNES SOMOS</a> 
+
+                        <a href="#convocatoria">CONVOCATORIAS</a> 
+
+                        <a>CONTÁCTANOS</a>
+
+                        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+                            <FaTimes/>
+                        </button>
+                </nav>
+
+                <button className="nav-btn" onClick={showNavbar}>
+                    <FaBars/>
+                </button>
+
 
 
             </header>
