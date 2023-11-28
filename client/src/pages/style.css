@@ -216,4 +216,8 @@
         transform: translateX(-50%);
     }
 
+    .banner-article div.banner-section{
+        padding: 0;
+        width: 100%;
+    }
 }

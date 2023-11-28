@@ -43,7 +43,7 @@ export const LandingPage = () => {
                 <div className='landingpage-section-one-title-container'>
                     <div>
                         <H1 value={"JUNTOS CONSTRUIMOS HISTORIAS DE VIDA EXITOSAS"}></H1>
-                        <ButtonSeeMore value={"CONOCE MÁS"} color='#ff0019'/>
+                        <ButtonSeeMore value={"CONOCE MÁS"} color='#ff0019' hover={false}/>
                     </div>
                 </div>
             </Banner>
