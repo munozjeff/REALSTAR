@@ -188,6 +188,7 @@
 /* Problem and solution */
 .problem-and-solution{
     padding: 6rem;
+
 }
 
 .problem-and-solution-p{
@@ -196,6 +197,9 @@
     font-family: 'Montserrat', sans-serif;
     margin-top: 4rem;
 }
+
+
+
 
 @media screen and (width < 960px) {
     h1,h2,h3,h4{
@@ -220,4 +224,16 @@
         padding: 0;
         width: 100%;
     }
+
+
+    /* Problem and Solution */
+
+    .problem-and-solution{
+        padding: 1rem;
+    
+    }
+    .problem-and-solution-p{
+        font-size: 1rem;
+    }
+
 }

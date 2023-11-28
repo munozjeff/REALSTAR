@@ -8,6 +8,7 @@ footer{
     font-family: 'Montserrat', sans-serif;
     padding-top: 3rem;
     padding-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 .footer-img{
@@ -63,3 +64,17 @@ footer{
     object-fit: cover;
     height: 100%;
 }
+
+
+
+@media (max-width: 425px) {
+    
+    
+    
+    .footer-img{
+        padding: 5px;
+    }
+    .social-media-footer{
+        justify-content: center;
+    }
+  }

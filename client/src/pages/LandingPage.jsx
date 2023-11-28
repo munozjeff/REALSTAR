@@ -68,27 +68,7 @@ export const LandingPage = () => {
             </div>
         </section>
 
-        {/* <section className='values-section'>
 
-            <div className='main-title-value'>
-                <h2>MISIÓN Y VISIÓN</h2>
-            </div>
-
-            <div className='values-cards-container'>
-                <CardValues imageRoute="/src/assets/icons/Iconos-01.png" title="Misión" 
-                description="Contribuir al desarrollo humano integral y
-                generar bienestar a la población colombiana a
-                través de la promoción del deporte, la recreación
-                y la actividad física." />
-
-                <CardValues imageRoute="/src/assets/icons/Iconos-02.png" title="Visión" 
-                description="Contribuir al desarrollo humano integral y
-                generar bienestar a la población colombiana a
-                través de la promoción del deporte, la recreación
-                y la actividad física." />
-            </div>
-           
-        </section> */}
         <section className='landingpage-section-three'>
             <OpacityMask>
                 <H2 value={"MISIÓN Y VISIÓN"} color={"white"}></H2>

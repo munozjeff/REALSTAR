@@ -33,10 +33,26 @@
 .text-cont h2{
     font-size: 2rem;
     color: black;
+    display: block;
+    margin-bottom: 8px;
 
 }
 .text-cont p{
     
     color: black;
     font-size: clamp(0.1rem,1.5vw,1rem);
+}
+
+@media (max-width: 768px){
+
+    .text-cont{
+        width: 70%;
+    }
+    .text-cont p{
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    .image-text-container{
+        display: none; 
+    }
 }
