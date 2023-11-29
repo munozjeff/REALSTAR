@@ -2,6 +2,7 @@ import React from "react";
 import './styles.css'
 import {FaBars, FaTimes} from "react-icons/fa"
 import {useRef} from "react"
+import logo from "/src/assets/Logos/Logos Real Star-03.png"
 function Header(){
 
     const navRef = useRef();
@@ -14,7 +15,7 @@ function Header(){
         <>
             <header className="header-container"> 
                 <div className="header-logo">
-                    <img src="/src/assets/Logos/Logos Real Star-03.png" alt="image-logo" />
+                    <img src={logo} alt="image-logo" />
                 
                 </div>
                 <nav ref={navRef}>

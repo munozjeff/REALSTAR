@@ -1,11 +1,17 @@
 import React from "react";
 import './styles.css'
+import logo_02 from "/src/assets/Logos/Asset 4.png"
+import logo_08 from "/src/assets/Logos/Asset 8.png"
+import logo_07 from "/src/assets/Logos/Asset 7.png"
+import logo_09 from "/src/assets/Logos/Asset 9.png"
+import logo_10 from "/src/assets/Logos/Asset 10.png"
+import logo_11 from "/src/assets/Logos/Asset 11.png"
 
 function Footer(){
     return(
         <footer>
                 <div className="footer-img">
-                    <img src="/src/assets/Logos/Asset 4.png" alt="footer-logo" />
+                    <img src={logo_02} alt="footer-logo" />
 
                 </div>
 
@@ -35,20 +41,20 @@ function Footer(){
                         <div className="logos-container-footer">
 
                             <div>
-                                    <img src="/src/assets/Logos/Asset 8.png"/>
+                                    <img src={logo_08}/>
                                     <a href="mailto:comunicaciones@corporacionrealstar.org">comunicaciones@corporacionrealstar.org</a>
                             </div>
                             <div>
-                                    <img src="/src/assets/Logos/Asset 7.png"/>
+                                    <img src={logo_07}/>
                                     <a href="tel:+573245428745">(+57) 324 5428745</a>
                             </div>
 
                         </div>
 
                         <div className="social-media-footer">
-                            <img src="/src/assets/Logos/Asset 9.png"/>
-                            <img src="/src/assets/Logos/Asset 10.png"/>
-                            <img src="/src/assets/Logos/Asset 11.png"/>
+                            <img src={logo_09}/>
+                            <img src={logo_10}/>
+                            <img src={logo_11}/>
                         </div>
 
                     </div>
