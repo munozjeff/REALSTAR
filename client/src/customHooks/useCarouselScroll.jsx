@@ -65,7 +65,6 @@ export const useCarouselScroll = ({items:children,...data}) => {
                     scrollLeft = completedItems * itemWidth
                 }
                 setScrollState({...scrollState,scrollLeft:scrollLeft})
-                console.log("upp");
             }
         }
     },[scrollState.active])
@@ -114,6 +113,9 @@ export const useCarouselScroll = ({items:children,...data}) => {
                 let newScrollLeft = null
                 var interval = setInterval(() => {
                     newScrollLeft = references.carouselContainer.current.scrollLeft + itemWidth
+                    // if (newScrollLeft >= references.carouselContainer.current.offsetWidth) {
+                    //     references.carouselContainer.current.scrollLeft = 0
+                    // }
                     references.carouselContainer.current.scrollTo({
                       left: newScrollLeft,
                       behavior: 'smooth'

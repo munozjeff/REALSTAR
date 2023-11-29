@@ -43,7 +43,7 @@ export const LandingPage = () => {
             <section  id='section1' className='landingpage-section-one landingpage-section'>
                 <Banner invest={true}>
                     <div className='landingpage-section-one-carousel-container'>
-                        <Carousel auto={true} enableButtons={true}> 
+                        <Carousel auto={true} infinite={false} time={5000} enableButtons={true} items={1}> 
                             <CardBanner image={image_carousel_one}/>
                             <CardBanner image={image_carousel_two}/>
                             <CardBanner image={image_carousel_three}/>
