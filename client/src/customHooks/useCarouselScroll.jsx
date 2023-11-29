@@ -156,12 +156,57 @@ export const useCarouselScroll = ({items:children,...data}) => {
         setScrollState({...scrollState,...dataInit})
     }
     const endScroll = ()=>setScrollState({...scrollState,active:false})
+
+    const nextItem = (itemWidth)=>{
+        
+        let newScrollLeft = references.carouselContainer.current.scrollLeft + itemWidth
+
+        //if (itemWidth > 0) {
+            if (newScrollLeft <  references.carouselContainer.current.offsetWidth && newScrollLeft >= 0) {
+                references.carouselContainer.current.scrollTo({
+                    left: newScrollLeft,
+                    behavior: 'smooth'
+                })
+            }
+        //}
+        // else{
+        //     if (newScrollLeft >  references.carouselContainer.current.offsetWidth) {
+        //         references.carouselContainer.current.scrollTo({
+        //             left: newScrollLeft,
+        //             behavior: 'smooth'
+        //         })
+        //     }
+        // }
+
+        // references.carouselContainer.current.scrollTo({
+        //     left: newScrollLeft,
+        //     behavior: 'smooth'
+        // })
+                    setScrollState({...scrollState,scrollLeft:newScrollLeft})
+            // let newScrollLeft = (scrollState.scrollLeft + itemWidth)
+            // if (itemWidth > 0) {
+            //     newScrollLeft = ((scrollState.scrollLeft + itemWidth)/itemWidth)*itemWidth
+            //     if (newScrollLeft < (references.carouselContainer.current.scrollLeft - itemWidth)) {
+            //         setScrollState({...scrollState,scrollLeft:newScrollLeft})
+            //     }
+            // }
+            // else{
+            //     newScrollLeft = (((scrollState.scrollLeft + itemWidth)/itemWidth)*itemWidth)+itemWidth
+            //     if (newScrollLeft >= 0 ) {
+            //         setScrollState({...scrollState,scrollLeft:newScrollLeft})
+            //     }
+                
+            // }
+            // newScrollLeft = itemWidth > 0  ? Math.floor(newScrollLeft) : Math.floor(newScrollLeft) + 1
+            console.log(newScrollLeft);
+            
+    }
   return {
     items,
     scroll,
     initScroll,
     endScroll,
-    setReferencesCarouselScroll
-
+    setReferencesCarouselScroll,
+    nextItem
   }
 }

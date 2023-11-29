@@ -5,14 +5,14 @@ import { useCarouselScroll } from '../../customHooks/useCarouselScroll'
 // import { useCarousel } from '../../customHooks/useCarousel'
 
 export const Carousel = ({children=[],width=100,items:cantItems=null,auto=false,time=5000,infinite=false}) => {
-    const {setReferencesCarouselWidth} = useCarouselWidth({
+    const {setReferencesCarouselWidth,itemWidthSingle} = useCarouselWidth({
         widthInit:width,
         items:cantItems,
         auto:auto,
         infinite:infinite,
         children:children.length
     })
-    const {items,scroll,initScroll,endScroll,setReferencesCarouselScroll} = useCarouselScroll({
+    const {items,scroll,initScroll,endScroll,setReferencesCarouselScroll,nextItem} = useCarouselScroll({
       items:children,
       auto:auto,
       time:time,
@@ -40,9 +40,12 @@ export const Carousel = ({children=[],width=100,items:cantItems=null,auto=false,
     const onTouchMoveHandler = (e) => scroll(e.touches[0].clientX)
     const onTouchEndHandler = () => endScroll()
 
+    const nextItemHandler = () => nextItem(itemWidthSingle)
+    const prevItemHandler = () => nextItem(-itemWidthSingle)
+
   return (
     <div className='carousel'>
-      <div className='button-carousel button-carousel-prev'></div>
+      <div className='button-carousel button-carousel-prev' onClick={prevItemHandler}></div>
       <div ref={carouselContainer} id='carouselContainer' 
         onMouseDown={onMouseDownHandler}
         onMouseMove={onMouseMoveHandler}
@@ -56,7 +59,7 @@ export const Carousel = ({children=[],width=100,items:cantItems=null,auto=false,
                   items.map((item,index)=><div className='itemContainer' key={index}>{item}</div>)}
           </div>
       </div>
-      <div className='button-carousel button-carousel-next'></div>
+      <div className='button-carousel button-carousel-next' onClick={nextItemHandler}></div>
     </div>
     
   )

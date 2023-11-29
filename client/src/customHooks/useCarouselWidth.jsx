@@ -8,6 +8,7 @@ const refInit = {
 
 export const useCarouselWidth = ({widthInit,items,children,auto,infinite}) => {
     const [width, setWidth] = useState(null)
+    const [itemWidthSingle,setItemWidthSingle] = useState(0)
     const [references,setReferencesCarouselWidth] = useState({...refInit})
 
     useEffect(() => {
@@ -21,7 +22,9 @@ export const useCarouselWidth = ({widthInit,items,children,auto,infinite}) => {
     useEffect(()=>{
         if (references.carouselContainer) {
             let newWidth = 0
-            let itemWidth = 0
+            let itemWidth = references.carouselContainer.current.scrollWidth / children
+            setItemWidthSingle(itemWidth)
+            itemWidth = 0
             const cantItems = infinite ?  (children + 6): items 
             if (items !== null) {
                 switch (items) {
@@ -58,5 +61,6 @@ export const useCarouselWidth = ({widthInit,items,children,auto,infinite}) => {
 
   return{
     setReferencesCarouselWidth,
+    itemWidthSingle
   }
 }

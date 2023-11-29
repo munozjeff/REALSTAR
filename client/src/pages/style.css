@@ -4,6 +4,19 @@
     padding: 0 10%;
     box-sizing: border-box;
 }
+.body-landingpage {
+    opacity: 0; /* Comienza con opacidad 0 (transparente) */
+    animation: aparecer 2s ease-in-out forwards; /* Animación de 1 segundo */
+}
+  
+@keyframes aparecer {
+    from {
+      opacity: 0; /* Opacidad inicial */
+    }
+    to {
+      opacity: 1; /* Opacidad final */
+    }
+}
 .landingpage-section-one{
     position: relative;
 }
@@ -39,7 +52,8 @@
 }
 .landingpage-section-two-container{
     background-color: rgba(240, 248, 255, 0.891);
-    margin: 0 10%;
+    padding: 0 10%;
+    padding-bottom: 100px;
 }
 
 .landingpage-title{
@@ -52,7 +66,7 @@
     background-image: url("/src/assets/images/IMG_0403.jpg");
     background-size: cover;
     background-position: center;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 .landingpage-section-three-card-container{
     display: flex;

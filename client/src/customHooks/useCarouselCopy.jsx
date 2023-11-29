@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 export const useCarousel = (dataInit) => {
     const [data, setData] = useState(dataInit)
     const [items,setItems] = useState(null)
+    const [itemWidth,setItemWidth] = useState(0)
     const [scrollState, setScrollState] = useState(
         {
             initScroll:false,
@@ -50,6 +51,7 @@ export const useCarousel = (dataInit) => {
         const updateCarouselWidth = ()=>{
             if (data.carouselContainer && items) {
                 const itemWidth = data.carouselContainer.current.scrollWidth / items.length
+                setItemWidth(itemWidth)
                 if (data.items === 1) {
                     data.carouselContainer.current.style.width = `${itemWidth}px`
                 }
@@ -240,6 +242,7 @@ export const useCarousel = (dataInit) => {
 
   return{
     items,
+    itemWidth,
     setItems,
     setDataInit,
     setInitScroll,
