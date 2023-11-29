@@ -17,6 +17,10 @@
       opacity: 1; /* Opacidad final */
     }
 }
+.landingpage-section-one-carousel-container{
+    width: 100%;
+    height: 100%;
+}
 .landingpage-section-one{
     position: relative;
 }

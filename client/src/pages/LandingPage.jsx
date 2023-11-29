@@ -17,7 +17,17 @@ import { CardPrograms } from '../components/cardPrograms/CardPrograms'
 import { ImageandText } from '../components/ImageandText/ImageandText'
 import { SectionFullWidth } from '../components/sectionfullWidth/SectionFullWidth'
 import { Footer } from '../components/Footer/Footer'
-
+import image_carousel_one from "/src/assets/images/1.Carrusel.jpg"
+import image_carousel_two from "/src/assets/images/2.Carrusel.jpg"
+import image_carousel_three from "/src/assets/images/3.Carrusel.jpg"
+import image_banner_one from "/src/assets/images/IMG_0433.jpg"
+import image_banner_two from "/src/assets/images/IMG_0442.jpg"
+import image_banner_three from "/src/assets/images/IMG_0441.jpg"
+import method_of_intervention from "/src/assets/images/Metodo_De_Intervencion.png"
+import icon_01 from "/src/assets/icons/Iconos-01.png"
+import icon_02 from "/src/assets/icons/Iconos-02.png"
+import icon_03 from "/src/assets/icons/Asset-3.png"
+import icon_04 from "/src/assets/icons/Asset-2.png"
 
 export const LandingPage = () => {
     const paragraph_1= " En la Corporación Real Star le apostamos a que, a través del deporte, la recreación y la actividad física cada día más niños, niñas, dolescentes, jóvenes y adultos logren ser estrellas realmente exitosas, con capacidades para alcanzar y sostener su propósito de vida y desde su quehacer aporten significativamente al desarrollo social sostenible de Colombia."
@@ -32,11 +42,13 @@ export const LandingPage = () => {
         <div className='body-landingpage'>
             <section  id='section1' className='landingpage-section-one landingpage-section'>
                 <Banner invest={true}>
-                    <Carousel auto={true}> 
-                        <CardBanner image="/src/assets/images/IMG_0433.jpg"/>
-                        <CardBanner image="/src/assets/images/IMG_0433.jpg"/>
-                        <CardBanner image="/src/assets/images/IMG_0433.jpg"/>
-                    </Carousel>
+                    <div className='landingpage-section-one-carousel-container'>
+                        <Carousel auto={true} enableButtons={true}> 
+                            <CardBanner image={image_carousel_one}/>
+                            <CardBanner image={image_carousel_two}/>
+                            <CardBanner image={image_carousel_three}/>
+                        </Carousel>
+                    </div>
                     <div className='landingpage-section-one-title-container'>
                         <div>
                             <H1 value={"JUNTOS CONSTRUIMOS HISTORIAS DE VIDA EXITOSAS"}></H1>
@@ -48,14 +60,14 @@ export const LandingPage = () => {
             <section id='section2' className='landingpage-section-two landingpage-section' >
                 <div className='landingpage-section-two-container'>
                     <Banner>
-                        <CardBanner image="/src/assets/images/IMG_0433.jpg"/>
+                        <CardBanner image={image_banner_one}/>
                         <div>
                             <TextWithStyledWords paragraph={paragraph_1} wordsToStyleOne={paragraph_1_wordsToStyleOne} wordsToStyleTwo={paragraph_1_wordsToStyleTwo}/>
                             <ButtonSeeMore value={"VER MAS"}/>
                         </div>
                     </Banner>
                     <Banner invest={true}>
-                        <CardBanner image="/src/assets/images/IMG_0442.jpg"/>
+                        <CardBanner image={image_banner_two}/>
                         <div>
                             <H4 value={"Nuestro método de intervención"}/>
                             <TextWithStyledWords paragraph={paragraph_2} wordsToStyleOne={paragraph_2_wordsToStyleOne}/>
@@ -73,12 +85,12 @@ export const LandingPage = () => {
                         <CardModelOne 
                             title={"Misión"} 
                             paragraph={"Contribuir al desarrollo humano integral y generar bienestar a la población colombiana a través de la promoción del deporte, la recreación y la actividad física."}
-                            image={"/src/assets/icons/Iconos-01.png"}
+                            image={icon_01}
                             />
                         <CardModelOne
                             title={"Visión"}
                             paragraph={"Alcanzar el desarrollo social sostenible en Colombia a través del deporte, la recreación y la actividad física."}
-                            image={"/src/assets/icons/Iconos-02.png"}
+                            image={icon_02}
                             />
                     </div>
                 </OpacityMask>
@@ -120,7 +132,7 @@ export const LandingPage = () => {
 
                 />
                 <Banner bannerModel={2} >
-                    <CardBanner image={"/src/assets/images/IMG_0441.jpg"} logo={true}/>
+                    <CardBanner image={image_banner_three} logo={true}/>
                     <TextWithStyledWords 
                         paragraph='A partir del 2018 (Año en que se fundó la organización), 
                                     lideramos estrategias deportivas, recreativas y de 
@@ -137,7 +149,7 @@ export const LandingPage = () => {
                     />
                 </Banner>
                 <Banner bannerModel={2} invest={true}>
-                    <CardBanner image={"/src/assets/images/IMG_0479.jpg"} logo={true}/>
+                    <CardBanner image={image_carousel_two} logo={true}/>
                     <div>
                         <H2 value={"Lo que más nos motiva"} color={"#ff0019"}/>
                         <TextWithStyledWords 
@@ -161,21 +173,21 @@ export const LandingPage = () => {
                 </div>
             </section> */}
             <SectionFullWidth 
-                    image={"/src/assets/images/Metodo_De_Intervencion.png"} 
+                    image={method_of_intervention} 
                     title={"NUESTRO MÉTODO DE INTERVENCIÓN"}
                     titleColor={"white"}
                     backgroundColor={"black"}/>
 
             <section className='problem-and-solution'>
                 <ImageandText
-                        imageRoute="/src/assets/icons/Asset-3.png"
+                        imageRoute={icon_03}
                         title="El problema"
                         paragraph="El Informe Nacional sobre Desarrollo Humano para Colombia ha señalado “En Colombia, en relación con las dimensiones del Índice de Desarrollo Humano, hubo un alto impacto en salud por el exceso de mortalidad, un freno al avance en los indicadores de educación y una caída en la dimensión del ingreso, con un deterioro relevante en la brecha de ingreso entre hombres y mujeres. Adicionalmente, frente al desarrollo humano persisten las pérdidas a causa, principalmente, de la desigualdad y por presiones planetarias”. Estudio realizado para     Colombia por PNUD y el Reino de Suecia, Año 2022."
 
 
                     />
                 <ImageandText
-                        imageRoute="/src/assets/icons/Asset-2.png"
+                        imageRoute={icon_04}
                         title="La solución"
                         paragraph="La CORPORACIÓN REAL STAR, desde su filantropía alinea su actuar con el firme propósito de potenciar las capacidades de sus grupos de valor, que les permita facilitarse más oportunidades para gestionar y lograr sus metas de vida y mejorar su calidad de vida. Los programas y proyectos a través de los cuales busca lograr su propósito superior centran sus bases en la promoción del deporte, la recreación y la actividad física, como punto de partida para dotar a la población intervenida de habilidades y/o cualidades para su desarrollo humano
                         integral."
@@ -191,14 +203,14 @@ export const LandingPage = () => {
             
             </section>
             <SectionFullWidth 
-                    image={"/src/assets/images/Metodo_De_Intervencion.png"} 
+                    image={method_of_intervention} 
                     title={"ORGANIGRAMA"}
                     titleColor={"#FF8300"}
                     backgroundColor={"black"}
                     />
 
             <SectionFullWidth 
-                            image={"/src/assets/images/Metodo_De_Intervencion.png"} 
+                            image={method_of_intervention} 
                             title={"NUESTRA GESTIÓN"}
                             titleColor={"#FF8300"}
                             backgroundColor={"white"}/>
