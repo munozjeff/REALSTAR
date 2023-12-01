@@ -18,7 +18,7 @@ function Footer(){
                 <div className="footer-options-container">
                         <ul className="footer-options" >
                             <li>
-                                <a href="#section1">LA CORPORACIÓN</a> 
+                                <a href="#section2">LA CORPORACIÓN</a> 
                             </li>
                             <li>
                                 <a href="#nuestros-programas">NUESTROS PROGRAMAS</a> 
@@ -52,9 +52,17 @@ function Footer(){
                         </div>
 
                         <div className="social-media-footer">
-                            <img src={logo_09}/>
-                            <img src={logo_10}/>
-                            <img src={logo_11}/>
+                            <a href="https://wa.me/573245428745" target="_blank" rel="noopener noreferrer">
+                                 <img  src={logo_09}/>
+                            </a>
+
+                            <a href="https://www.instagram.com/corporacionrealstar" target="_blank" rel="noopener noreferrer">
+                                <img src={logo_10}/>
+                            </a>
+                            <a href="https://www.facebook.com/CorporacionRealStarOficial" target="_blank" rel="noopener noreferrer">
+                                <img src={logo_11}/>
+                            </a>
+                            
                         </div>
 
                     </div>
