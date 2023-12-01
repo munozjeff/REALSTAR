@@ -23,7 +23,8 @@ export const useCarouselWidth = ({widthInit,items,children,auto,infinite}) => {
         if (references.carouselContainer) {
             let newWidth = 0
             const cantItems = infinite ?  (children + 6): items
-            let itemWidth = references.carouselContainer.current.scrollWidth / children
+            let itemWidth = references.carouselContainer.current.children[0].offsetWidth / children
+            console.log(references.carouselContainer.current.children[0].scrollWidth);
             setItemWidthSingle(itemWidth) 
             itemWidth = 0
             if (items !== null) {

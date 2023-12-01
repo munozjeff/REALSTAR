@@ -7,6 +7,7 @@
     flex-direction: row;
 }
 #itemsContainer{
+    flex-wrap: nowrap;
     text-wrap: nowrap;
 }
 .itemContainer{
