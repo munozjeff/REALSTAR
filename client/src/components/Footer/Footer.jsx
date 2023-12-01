@@ -30,7 +30,7 @@ function Footer(){
                                 <a href="#convocatoria">CONVOCATORIAS</a> 
                             </li>
                             <li>
-                                <a>CONTÁCTANOS</a> 
+                                <a href="#contact-form" >CONTÁCTANOS</a> 
                             </li>
                         </ul>
                 </div>

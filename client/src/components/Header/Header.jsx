@@ -28,7 +28,7 @@ function Header(){
 
                         <a href="#convocatoria">CONVOCATORIAS</a> 
 
-                        <a>CONTÁCTANOS</a>
+                        <a href="#contact-form">CONTÁCTANOS</a>
 
                         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                             <FaTimes/>

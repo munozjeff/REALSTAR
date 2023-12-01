@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import "./styles.css"
+import right_arrow from "/src/assets/icons/right-arrow.png"
 
 function Contact (){
 
@@ -40,12 +41,12 @@ function Contact (){
       };
 
     return(
-        <section className="contact-containet">
+        <section id="contact-form" className="contact-containet">
             <div className="contact-text">
                 <h2>¿Te gustaría contactarte con nosotros?</h2>
-                <h2>Escríbenos</h2>
+                <h2>¡Escríbenos!</h2>
                 <div>
-                    <img />
+                    <img src={right_arrow} alt="right-arrow"/>
                 </div>
             </div>
 

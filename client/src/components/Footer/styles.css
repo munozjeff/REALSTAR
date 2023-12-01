@@ -26,6 +26,10 @@ footer{
     line-height: 2rem;
 }
 
+.footer-options li a:hover{
+    color: orange;
+}
+
 .footer-options li{
     list-style: none;
     
