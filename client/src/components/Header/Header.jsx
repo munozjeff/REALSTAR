@@ -20,7 +20,7 @@ function Header(){
                 </div>
                 <nav ref={navRef}>
 
-                        <a href="#section1">LA CORPORACIÓN</a> 
+                        <a href="#section2">LA CORPORACIÓN</a> 
 
                         <a href="#nuestros-programas">NUESTROS PROGRAMAS</a> 
 

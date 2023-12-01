@@ -63,14 +63,12 @@ footer{
 .social-media-footer img{
     object-fit: cover;
     height: 100%;
+    cursor: pointer;
 }
 
 
-
 @media (max-width: 425px) {
-    
-    
-    
+
     .footer-img{
         padding: 5px;
     }
