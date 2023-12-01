@@ -14,9 +14,28 @@ function Contact (){
         setFormData({ ...formData, [e.target.name]: e.target.value });
       };
 
-      const handleSubmit = (e) => {
+      const handleSubmit = async(e) => {
         e.preventDefault();
-        // Add your form submission logic here, such as sending data to a server
+
+        try {
+          const response = await fetch('server/server.php', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams(formData).toString(),
+          });
+    
+          if (response.ok) {
+            console.log('Email sent successfully');
+          } else {
+            console.error('Failed to send email');
+          }
+        } catch (error) {
+          console.error('Error sending email:', error);
+        }
+
+
         console.log('Form submitted:', formData);
       };
 

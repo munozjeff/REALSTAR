@@ -28,10 +28,12 @@ form input, textarea{
     border-top: none;
     border-left: none;
     border-right: none;
+    color: black;
 
 }
 textarea{
     font-family: 'montserrat','sans-serif';
+    color: black;
 }
 
 .button-container{
@@ -43,15 +45,15 @@ form button{
     border-radius: 10px;
     width: 35%;
     padding: 0.3rem;
-    border: 1px solid orange;
-    color:orange ;
+    border: 1px solid #FF8300;
+    color:#FF8300;
     font-weight: bold;
     cursor: pointer;
 
 }
 
 form button:hover{
-    background: orange;
+    background: #FF8300;
     color: white;
 }
 
