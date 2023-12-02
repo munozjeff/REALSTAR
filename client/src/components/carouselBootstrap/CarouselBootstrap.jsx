@@ -3,7 +3,7 @@ import "./style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import { CardBanner } from '../cardBanner/CardBanner';
-import image_carousel_one from "/src/assets/images/1.Carrusel.jpg"
+import image_carousel_one from "/src/assets/images/1.jpg"
 
 export const CarouselBootstrap = ({children}) => {
     return (

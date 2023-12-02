@@ -17,8 +17,8 @@ import { CardPrograms } from '../components/cardPrograms/CardPrograms'
 import { ImageandText } from '../components/ImageandText/ImageandText'
 import { SectionFullWidth } from '../components/sectionfullWidth/SectionFullWidth'
 import { Footer } from '../components/Footer/Footer'
-import image_carousel_one from "/src/assets/images/1.Carrusel.jpg"
-import image_carousel_two from "/src/assets/images/2.Carrusel.jpg"
+import image_carousel_one from "/src/assets/images/1.jpg"
+import image_carousel_two from "/src/assets/images/2.jpg"
 import image_carousel_three from "/src/assets/images/3.Carrusel.jpg"
 import image_banner_one from "/src/assets/images/IMG_0433.jpg"
 import image_banner_two from "/src/assets/images/IMG_0442.jpg"
