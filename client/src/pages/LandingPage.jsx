@@ -23,6 +23,8 @@ import image_carousel_three from "/src/assets/images/3.Carrusel.jpg"
 import image_banner_one from "/src/assets/images/IMG_0433.jpg"
 import image_banner_two from "/src/assets/images/IMG_0442.jpg"
 import image_banner_three from "/src/assets/images/IMG_0441.jpg"
+import image_banner_four from "/src/assets/images/IMG_0528.jpg"
+import image_banner_five from "/src/assets/images/IMG_0427.jpg"
 import method_of_intervention from "/src/assets/images/Metodo_De_Intervencion.png"
 import icon_01 from "/src/assets/icons/Iconos-01.png"
 import icon_02 from "/src/assets/icons/Iconos-02.png"
@@ -76,13 +78,17 @@ export const LandingPage = () => {
                     <Banner invest={true}>
                         <div>
                             <CardBanner image={image_banner_two}/>
-                            <ButtonSeeMore value={"VER MAS"} to='#nuestro-metodo'/>
+                            <div className='button-image'>
+                                <ButtonSeeMore value={"VER MAS"} to='#nuestro-metodo'/>
+                            </div>
                         </div>
                         
                         <div>
                             <H4 value={"Nuestro método de intervención"}/>
                             <TextWithStyledWords paragraph={paragraph_2} wordsToStyleOne={paragraph_2_wordsToStyleOne}/>
-                            
+                            <div className='button-paragraph'>
+                                <ButtonSeeMore value={"VER MAS"} to='#nuestro-metodo'/>
+                            </div>
                         </div>
                     </Banner>
                 </div>
@@ -143,7 +149,7 @@ export const LandingPage = () => {
 
                 />
                 <Banner bannerModel={2} >
-                    <CardBanner image={image_banner_three} logo={true}/>
+                    <CardBanner image={image_banner_four} logo={true}/>
                     <TextWithStyledWords 
                         paragraph='A partir del 2018 (Año en que se fundó la organización), 
                                     lideramos estrategias deportivas, recreativas y de 
@@ -160,7 +166,7 @@ export const LandingPage = () => {
                     />
                 </Banner>
                 <Banner bannerModel={2} invest={true}>
-                    <CardBanner image={image_carousel_two} logo={true}/>
+                    <CardBanner image={image_banner_five} logo={true}/>
                     <div>
                         <H2 value={"Lo que más nos motiva"} color={"#ff0019"}/>
                         <TextWithStyledWords 
