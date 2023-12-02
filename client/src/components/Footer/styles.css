@@ -43,6 +43,10 @@ footer{
     display: flex;
     flex-direction: column;
 }
+
+.column-3 p{
+    color: white;
+}
 .logos-container-footer div{
     display: flex;
     flex-direction: row;
