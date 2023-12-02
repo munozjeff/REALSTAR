@@ -74,11 +74,15 @@ export const LandingPage = () => {
                         </div>
                     </Banner>
                     <Banner invest={true}>
-                        <CardBanner image={image_banner_two}/>
+                        <div>
+                            <CardBanner image={image_banner_two}/>
+                            <ButtonSeeMore value={"VER MAS"} to='#nuestro-metodo'/>
+                        </div>
+                        
                         <div>
                             <H4 value={"Nuestro método de intervención"}/>
                             <TextWithStyledWords paragraph={paragraph_2} wordsToStyleOne={paragraph_2_wordsToStyleOne}/>
-                            <ButtonSeeMore value={"VER MAS"}/>
+                            
                         </div>
                     </Banner>
                 </div>
@@ -124,8 +128,8 @@ export const LandingPage = () => {
                             ¡Tus aportes suman!
                         </p>
                     </div>
-                    <ButtonSeeMore value='DONAR' color='#FF8300'/>
-                    <ButtonSeeMore value='ALIARSE' color='#FF8300'/>
+                    <ButtonSeeMore value='DONAR' color='#FF8300' to='https://wa.me/573245428745'/>
+                    <ButtonSeeMore value='ALIARSE' color='#FF8300' to='https://wa.me/573245428745'/>
                 </OpacityMask>
             </section>
             <section id='section-somos' className='landingpage-section section-WhoWeAre'>
@@ -179,19 +183,19 @@ export const LandingPage = () => {
 
                 </div>
             </section> */}
-            <SectionFullWidth 
+            <section id='nuestro-metodo'>
+                <SectionFullWidth 
                     image={method_of_intervention} 
                     title={"NUESTRO MÉTODO DE INTERVENCIÓN"}
                     titleColor={"white"}
                     backgroundColor={"black"}/>
+            </section>
 
             <section className='problem-and-solution'>
                 <ImageandText
                         imageRoute={icon_03}
                         title="El problema"
                         paragraph="El Informe Nacional sobre Desarrollo Humano para Colombia ha señalado “En Colombia, en relación con las dimensiones del Índice de Desarrollo Humano, hubo un alto impacto en salud por el exceso de mortalidad, un freno al avance en los indicadores de educación y una caída en la dimensión del ingreso, con un deterioro relevante en la brecha de ingreso entre hombres y mujeres. Adicionalmente, frente al desarrollo humano persisten las pérdidas a causa, principalmente, de la desigualdad y por presiones planetarias”. Estudio realizado para     Colombia por PNUD y el Reino de Suecia, Año 2022."
-
-
                     />
                 <ImageandText
                         imageRoute={icon_04}

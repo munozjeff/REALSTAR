@@ -50,6 +50,9 @@
     .banner-article{
         flex-wrap: wrap;
     }
+    .banner-section{
+        margin: 5px 0;
+    }
     .banner-info{
         padding:0;
         min-width: 300px;

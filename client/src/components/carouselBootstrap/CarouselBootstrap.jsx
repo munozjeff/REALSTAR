@@ -8,7 +8,7 @@ import image_carousel_one from "/src/assets/images/1.jpg"
 export const CarouselBootstrap = ({children}) => {
     return (
         <Carousel touch={true}>
-            {children.map((card)=><Carousel.Item>{card}</Carousel.Item>)}
+            {children.map((card,index)=><Carousel.Item key={index}>{card}</Carousel.Item>)}
         </Carousel>
       );
 }
