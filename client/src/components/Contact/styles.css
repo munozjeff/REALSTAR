@@ -59,6 +59,7 @@ form button{
     background: white;
     border-radius: 10px;
     width: 35%;
+    min-width: 100px;
     padding: 0.3rem;
     border: 1px solid #FF8300;
     color:#FF8300;

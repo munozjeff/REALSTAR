@@ -46,7 +46,7 @@
 @media (max-width: 768px){
 
     .text-cont{
-        width: 80%;
+        width: 100%;
         padding: 1rem 2rem;
     }
     .text-cont p{
