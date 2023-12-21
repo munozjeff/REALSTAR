@@ -210,12 +210,12 @@
 /* Problem and solution */
 .problem-and-solution{
     padding: 6rem;
-    background-color: black;
+    background-color: #eaebed;
 
 }
 
 .problem-and-solution-p{
-    color: white;
+    color: black;
     font-size: clamp(0.1rem,1.5vw,1.2rem);
     font-family: 'Montserrat', sans-serif;
     margin-top: 4rem;
