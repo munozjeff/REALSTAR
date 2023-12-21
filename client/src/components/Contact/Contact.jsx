@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import "./styles.css"
-import right_arrow from "/src/assets/icons/right-arrow.png"
+import right_arrow from "/src/assets/icons/right-arrow-black.png"
 
 function Contact (){
 
