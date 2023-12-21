@@ -105,6 +105,9 @@ p{
     background-position: center;
     /* margin-top: 100px; */
 }
+.landingpage-section-three .opacity-mask-container{
+    padding-top: 50px;
+}
 .landingpage-section-three-card-container{
     display: flex;
     justify-content: center;
@@ -268,7 +271,26 @@ p{
 .problem-and-solution{
     padding: 6rem;
     background-color: #eaebed;
-
+    background: url("/src/assets/Logos/Logos_Real_Star-04.png");
+    background-position: right;
+    background-size: 15%;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.problem-and-solution>div{
+    position: relative;
+    z-index: 2;
+}
+.problem-and-solution::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #eaebedc2;
+    z-index: 1;
 }
 
 .problem-and-solution-p{
@@ -354,6 +376,6 @@ p{
         display: none;
     }
     .landingpage-section-two-container{
-        padding-bottom: 0;
+        padding-bottom: 5px;
     }
 }

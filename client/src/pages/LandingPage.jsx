@@ -203,6 +203,7 @@ export const LandingPage = () => {
             </section>
 
             <section className='problem-and-solution'>
+                <div>
                 <ImageandText
                         imageRoute={icon_03}
                         title="El problema"
@@ -222,6 +223,7 @@ export const LandingPage = () => {
                     actividad física), aplica (2) dos ejes estratégicos y (6) seis componentes que apropiados por las personas atendidas facilitan las capacidades necesarias para transformar su realidad y contribuir al desarrollo local de
                     su territorio.
                     </p>
+                </div>
             
             </section>
             <SectionFullWidth 
