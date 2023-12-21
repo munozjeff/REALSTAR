@@ -45,26 +45,24 @@ export const LandingPage = () => {
 
         <div className='body-landingpage'>
             <section  id='section1' className='landingpage-section-one landingpage-section'>
-                <Banner invest={true}>
-                    <div className='landingpage-section-one-carousel-container'>
+                {/* <Banner invest={true}> */}
+                    {/* <div className='landingpage-section-one-carousel-container'>
                         <CarouselBootstrap>
                             <CardBanner image={image_carousel_one} logo={true}/>
                             <CardBanner image={image_carousel_two} logo={true}/>
                             <CardBanner image={image_carousel_three} logo={true}/>
                         </CarouselBootstrap>
-                        {/* <Carousel auto={true} infinite={false} time={5000} enableButtons={true} items={1}> 
+                        <Carousel auto={true} infinite={false} time={5000} enableButtons={true} items={1}> 
                             <CardBanner image={image_carousel_one}/>
                             <CardBanner image={image_carousel_two}/>
                             <CardBanner image={image_carousel_three}/>
-                        </Carousel> */}
-                    </div>
+                        </Carousel>
+                    </div> */}
                     <div className='landingpage-section-one-title-container'>
-                        <div>
                             <H1 value={"JUNTOS CONSTRUIMOS HISTORIAS DE VIDA EXITOSAS"}></H1>
                             <ButtonSeeMore value={"CONOCE MÁS"} color='#ff0019' hover={false}/>
-                        </div>
                     </div>
-                </Banner>
+                {/* </Banner> */}
             </section>
             <section id='section2' className='landingpage-section-two landingpage-section' >
                 <div className='landingpage-section-two-container'>
