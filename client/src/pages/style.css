@@ -252,6 +252,7 @@ p{
     font-size: clamp(0.1rem,1.5vw,1.2rem);
     font-family: 'Montserrat', sans-serif;
     margin-top: 4rem;
+    font-weight: 500;
 
 }
 
