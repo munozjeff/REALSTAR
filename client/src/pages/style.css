@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+p{
+    text-align: justify;
+}
 .landingpage-section{
     width: 100%;
     padding: 0 10%;
