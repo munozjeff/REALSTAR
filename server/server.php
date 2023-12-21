@@ -1,39 +1,39 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $telephone = $_POST["telephone"];
-    $message = $_POST["message"];
+    if ($_SERVER["REQUEST_METHOD"] === "POST") {
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $telephone = $_POST["telephone"];
+        $message = $_POST["message"];
 
-    // Set the recipient email address
-    $to = "vidahoro@gmail.com";
+        // Set the recipient email address
+        $to = "vidahoro@gmail.com";
 
-    // Set the subject of the email
-    $subject = "New Contact Form Submission";
+        // Set the subject of the email
+        $subject = "New Contact Form Submission";
 
-    // Compose the email message
-    $email_message = "Name: $name\n";
-    $email_message .= "Email: $email\n";
-    $email_message .= "Telephone: $telephone\n";
-    $email_message .= "Message:\n$message";
+        // Compose the email message
+        $email_message = "Name: $name\n";
+        $email_message .= "Email: $email\n";
+        $email_message .= "Telephone: $telephone\n";
+        $email_message .= "Message:\n$message";
 
-    // Additional headers
-    $headers = "From: $email\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    $headers .= "X-Mailer: PHP/" . phpversion();
+        // Additional headers
+        $headers = "From: $email\r\n";
+        $headers .= "Reply-To: $email\r\n";
+        $headers .= "X-Mailer: PHP/" . phpversion();
 
-    // Send the email
-    $mail_success = mail($to, $subject, $email_message, $headers);
+        // Send the email
+        $mail_success = mail($to, $subject, $email_message, $headers);
 
-    if ($mail_success) {
-        http_response_code(200);
-        echo "Email Sent Successfully";
+        if ($mail_success) {
+            http_response_code(200);
+            echo "Email Sent Successfully";
+        } else {
+            http_response_code(500);
+            echo "Internal Server Error";
+        }
     } else {
-        http_response_code(500);
-        echo "Internal Server Error";
+        http_response_code(400);
+        echo "Bad Request";
     }
-} else {
-    http_response_code(400);
-    echo "Bad Request";
-}
 ?>

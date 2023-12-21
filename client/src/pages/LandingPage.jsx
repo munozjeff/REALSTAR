@@ -193,8 +193,8 @@ export const LandingPage = () => {
                 <SectionFullWidth 
                     image={method_of_intervention} 
                     title={"NUESTRO MÉTODO DE INTERVENCIÓN"}
-                    titleColor={"white"}
-                    backgroundColor={"black"}/>
+                    titleColor={"#FF8300"}
+                    backgroundColor={"#EAEBED"}/>
             </section>
 
             <section className='problem-and-solution'>
@@ -223,14 +223,14 @@ export const LandingPage = () => {
                     image={method_of_intervention} 
                     title={"ORGANIGRAMA"}
                     titleColor={"#FF8300"}
-                    backgroundColor={"black"}
+                    backgroundColor={"white"}
                     />
 
             <SectionFullWidth 
                             image={method_of_intervention} 
                             title={"NUESTRA GESTIÓN"}
                             titleColor={"#FF8300"}
-                            backgroundColor={"white"}/>
+                            backgroundColor={"#EAEBED"}/>
 
             <section className='our-programs'>
                 <div>
