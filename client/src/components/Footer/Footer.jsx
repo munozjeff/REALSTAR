@@ -1,17 +1,19 @@
 import React from "react";
 import './styles.css'
-import logo_02 from "/src/assets/Logos/Asset 4.png"
+import logo_white from "/src/assets/Logos/White Logo.png"
+// import logo_02 from "/src/assets/Logos/Asset 4.png"
 import logo_08 from "/src/assets/Logos/Asset 8.png"
 import logo_07 from "/src/assets/Logos/Asset 7.png"
 import logo_09 from "/src/assets/Logos/Asset 9.png"
 import logo_10 from "/src/assets/Logos/Asset 10.png"
 import logo_11 from "/src/assets/Logos/Asset 11.png"
+import logo_12 from "/src/assets/Logos/linkedin.png"
 
 function Footer(){
     return(
         <footer>
                 <div className="footer-img">
-                    <img src={logo_02} alt="footer-logo" />
+                    <img src={logo_white} alt="footer-logo" />
 
                 </div>
 
@@ -61,6 +63,9 @@ function Footer(){
                             </a>
                             <a href="https://www.facebook.com/CorporacionRealStarOficial" target="_blank" rel="noopener noreferrer">
                                 <img src={logo_11}/>
+                            </a>
+                            <a href="https://www.facebook.com/CorporacionRealStarOficial" target="_blank" rel="noopener noreferrer">
+                                <img src={logo_12}/>
                             </a>
                             
                         </div>
