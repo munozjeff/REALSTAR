@@ -110,32 +110,7 @@ export const LandingPage = () => {
                     </div>
                 </OpacityMask>
             </section>
-            <section id='nuestros-programas' className='our-programs'>
-                <div>
-                    <H2 value={"NUESTROS PROGRAMAS"} color={"#FF8300"}></H2>
-                    <div className='our-programs-cards-container'>
-                        <CardPrograms title={"SEMILLEROS"} subtitle={"DEPORTIVOS"}/>
-                        <CardPrograms title={"FORMANDO"} subtitle={"FORMADORES"}/>
-                        <CardPrograms title={"INTEGRACIÓN"} subtitle={"SOCIAL"}/>
-                    </div>
-                </div>
-            </section>
-            <section id='convocatoria' className='landingpage-section-three section-Join'>
-                <OpacityMask>
-                    <H2 value={"SÚMATE"} color={"white"}></H2>
-                    <div className='section-Join-paragraph-container'>
-                        <p>
-                            Sumamos esfuerzos para que cada día sean mas las historias 
-                            de vida exitosas en Colombia, ahora es el momento
-                        </p>
-                        <p>
-                            ¡Tus aportes suman!
-                        </p>
-                    </div>
-                    <ButtonSeeMore value='DONAR' color='#FF8300' to='https://wa.me/573245428745'/>
-                    <ButtonSeeMore value='ALIARSE' color='#FF8300' to='https://wa.me/573245428745'/>
-                </OpacityMask>
-            </section>
+
             <section id='section-somos' className='landingpage-section section-WhoWeAre'>
                 <H2 value={"QUIÉNES SOMOS"} color={"#FF8300"}/>
                 <TextWithStyledWords 
@@ -181,6 +156,35 @@ export const LandingPage = () => {
                     </div>
                 </Banner>
             </section>
+
+            <section id='nuestros-programas' className='our-programs'>
+                <div>
+                    <H2 value={"NUESTROS PROGRAMAS"} color={"#FF8300"}></H2>
+                    <div className='our-programs-cards-container'>
+                        <CardPrograms title={"SEMILLEROS"} subtitle={"DEPORTIVOS"}/>
+                        <CardPrograms title={"FORMANDO"} subtitle={"FORMADORES"}/>
+                        <CardPrograms title={"INTEGRACIÓN"} subtitle={"SOCIAL"}/>
+                    </div>
+                </div>
+            </section>
+                        
+            <section id='convocatoria' className='landingpage-section-three section-Join'>
+                <OpacityMask>
+                    <H2 value={"SÚMATE"} color={"white"}></H2>
+                    <div className='section-Join-paragraph-container'>
+                        <p>
+                            Sumamos esfuerzos para que cada día sean mas las historias 
+                            de vida exitosas en Colombia, ahora es el momento
+                        </p>
+                        <p>
+                            ¡Tus aportes suman!
+                        </p>
+                    </div>
+                    <ButtonSeeMore value='DONAR' color='#FF8300' to='https://wa.me/573245428745'/>
+                    <ButtonSeeMore value='ALIARSE' color='#FF8300' to='https://wa.me/573245428745'/>
+                </OpacityMask>
+            </section>
+ 
             {/* <section className='our-method-of-intervention-section section-full-width' >
                 <H2 value={"NUESTRO MÉTODO DE INTERVENCIÓN"} color={"white"}></H2>
                 <div className='our-method-of-intervention-section-background-image'>
@@ -230,7 +234,7 @@ export const LandingPage = () => {
                             titleColor={"#FF8300"}
                             backgroundColor={"#EAEBED"}/>
 
-            <section className='our-programs'>
+            {/* <section className='our-programs'>
                 <div>
                     <H2 value={"DOCUMENTOS"} color={"#FF8300"}></H2>
                     <div className='our-programs-cards-container'>
@@ -238,7 +242,7 @@ export const LandingPage = () => {
                         <CardPrograms title={"POLÍTICA DE TRATAMIENTO"} titleType='h2' buttonValue='VER'/>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>
 
         <Contact/>

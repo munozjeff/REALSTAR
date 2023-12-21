@@ -2,12 +2,14 @@
 .contact-containet{
     display: flex;
     flex-direction: row;
-    background-color: black;
-    color: white;
+    background-color: #eaebed;
+    color:  black;
     font-family: 'montserrat','sans-serif';
     padding: 3rem;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 5rem;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
 }
 .contact-text{
     display: flex;
@@ -29,6 +31,7 @@
     background-color: white;
     border-radius: 4px;
     width: 45%;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
 
 
 }
@@ -77,9 +80,12 @@ form button:hover{
     .form-container{
         width: 90%;
         padding: 1.5rem;
+        
     }
     .contact-text{
         width: 90%;
     }
-
+    .contact-containet{
+        margin: 0rem;
+    }
 }
