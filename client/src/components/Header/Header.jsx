@@ -22,9 +22,9 @@ function Header(){
 
                         <a href="#section2">LA CORPORACIÓN</a> 
 
-                        <a href="#nuestros-programas">NUESTROS PROGRAMAS</a> 
-
                         <a href="#section-somos">QUIÉNES SOMOS</a> 
+
+                        <a href="#nuestros-programas">NUESTROS PROGRAMAS</a> 
 
                         <a href="#convocatoria">CONVOCATORIAS</a> 
 

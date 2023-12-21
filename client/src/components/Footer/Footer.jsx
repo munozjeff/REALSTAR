@@ -23,16 +23,23 @@ function Footer(){
                                 <a href="#section2">LA CORPORACIÓN</a> 
                             </li>
                             <li>
-                                <a href="#nuestros-programas">NUESTROS PROGRAMAS</a> 
-                            </li>
-                            <li>
                                 <a href="#section-somos">QUIÉNES SOMOS</a> 
                             </li>
+                            <li>
+                                <a href="#nuestros-programas">NUESTROS PROGRAMAS</a> 
+                            </li>
+                            
                             <li>
                                 <a href="#convocatoria">CONVOCATORIAS</a> 
                             </li>
                             <li>
                                 <a href="#contact-form" >CONTÁCTANOS</a> 
+                            </li>
+                            <li>
+                                <a href="#section-somos">REGIMEN TRIBUTARIO ESPECIAL</a> 
+                            </li>
+                            <li>
+                                <a href="#section-somos">POLITICA DE TRATAMIENTO</a> 
                             </li>
                         </ul>
                 </div>
@@ -64,7 +71,7 @@ function Footer(){
                             <a href="https://www.facebook.com/CorporacionRealStarOficial" target="_blank" rel="noopener noreferrer">
                                 <img src={logo_11}/>
                             </a>
-                            <a href="https://www.facebook.com/CorporacionRealStarOficial" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/company/corporacion-real-star" target="_blank" rel="noopener noreferrer">
                                 <img src={logo_12}/>
                             </a>
                             

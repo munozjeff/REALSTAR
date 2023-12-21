@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+p{
+    text-align: justify;
+}
 .landingpage-section{
     width: 100%;
     padding: 0 10%;
@@ -273,6 +276,7 @@
     font-size: clamp(0.1rem,1.5vw,1.2rem);
     font-family: 'Montserrat', sans-serif;
     margin-top: 4rem;
+    font-weight: 500;
 
 }
 
