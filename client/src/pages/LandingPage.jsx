@@ -69,6 +69,7 @@ export const LandingPage = () => {
                     <Banner>
                         <CardBanner image={image_banner_one}/>
                         <div>
+                            <H4 value={"La Corporación"} />
                             <TextWithStyledWords paragraph={paragraph_1} wordsToStyleOne={paragraph_1_wordsToStyleOne} wordsToStyleTwo={paragraph_1_wordsToStyleTwo}/>
                             <ButtonSeeMore value={"VER MAS"}/>
                         </div>
@@ -82,7 +83,7 @@ export const LandingPage = () => {
                         </div>
                         
                         <div>
-                            <H4 value={"Nuestro método de intervención"}/>
+                            <H4 value={"Nuestro método de intervención"} />
                             <TextWithStyledWords paragraph={paragraph_2} wordsToStyleOne={paragraph_2_wordsToStyleOne}/>
                             <div className='button-paragraph'>
                                 <ButtonSeeMore value={"VER MAS"} to='#nuestro-metodo'/>

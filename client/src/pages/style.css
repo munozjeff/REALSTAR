@@ -27,7 +27,7 @@
     background-image: url("/src/assets/images/1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -10%;
+    background-position-y: 30%;
     display: flex;
     justify-content: left;
     align-items: center;
