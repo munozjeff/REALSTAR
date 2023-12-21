@@ -113,6 +113,7 @@ export const LandingPage = () => {
             </section>
 
             <section id='section-somos' className='landingpage-section section-WhoWeAre'>
+                <div>
                 <H2 value={"QUIÉNES SOMOS"} color={"#FF8300"}/>
                 <TextWithStyledWords 
                     paragraph='Corporación Real Star, es una organización sin fines de lucro que 
@@ -156,6 +157,7 @@ export const LandingPage = () => {
                         />
                     </div>
                 </Banner>
+                </div>
             </section>
 
             <section id='nuestros-programas' className='our-programs'>

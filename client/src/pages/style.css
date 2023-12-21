@@ -57,7 +57,7 @@
 } */
 .landingpage-section-one h1{
     flex: 1;
-    margin-top: 50px;
+    padding-top: 50px;
     margin-bottom: 100px;
 }
 .landingpage-section-one-title-container{
@@ -77,17 +77,17 @@
 .landingpage-section-two{
     background-image: url("/src/assets/Logos/Logos_Real_Star-04.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 60%;
     background-position: center;
     margin: 0;
     padding: 0;
     width: 100vw;
-    margin-top: 50px;
 }
 .landingpage-section-two-container{
     background-color: rgba(240, 248, 255, 0.891);
     padding: 0 10%;
     padding-bottom: 100px;
+    padding-top: 50px;
 }
 
 .landingpage-title{
@@ -170,21 +170,26 @@
     height: 100%;
     padding: 0 10%;
     padding-bottom: 10vw;
-    background-color: rgba(240, 248, 255, 0.891);
+    background-color: #eaebedc2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     box-sizing: border-box;
+    padding-top: 30px;
 }
 .our-programs>div>h2{
     text-align: center;
 }
 .section-Join{
     margin: 0;
+    /* padding-top: 30px; */
+}
+.section-Join .opacity-mask-container{
+    padding-top: 30px;
 }
 .section-Join h2{
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 .section-Join-paragraph-container{
     flex: 1;
@@ -213,6 +218,25 @@
 }
 .section-WhoWeAre{
     margin: 100px 0;
+    background: url("/src/assets/Logos/Logos_Real_Star-04.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.section-WhoWeAre>div{
+    position: relative;
+    z-index: 3;
+}
+.section-WhoWeAre::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.621);
+    z-index: 1;
 }
 .section-WhoWeAre>p:first-of-type{
     margin-bottom: 50px;
@@ -304,7 +328,9 @@
 
 
     /* Problem and Solution */
-
+    .section-WhoWeAre{
+        background-size: 100%;
+    }
     .problem-and-solution{
         padding: 1rem;
         width: 100%;
