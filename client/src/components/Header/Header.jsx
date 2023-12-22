@@ -18,7 +18,7 @@ function Header(){
                     <img src={logo} alt="image-logo" />
                 
                 </div>
-                <nav ref={navRef}>
+                <nav className="nav-class-header" ref={navRef}>
 
                         <a href="#section2">LA CORPORACIÓN</a> 
 

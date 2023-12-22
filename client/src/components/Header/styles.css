@@ -5,7 +5,7 @@
     height: 80px;
     width: 100%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     font-weight: bold;
     margin-bottom: 2rem;
@@ -28,7 +28,10 @@ nav a{
 nav a:hover{
     border-bottom: 2px solid #FF9700;
 }
+.nav-class-header{
+    margin-right: 10px;
 
+}
 
 .header-logo{
     height: 44%;
@@ -38,6 +41,7 @@ nav a:hover{
 .header-logo img{
     object-fit: cover;
     height: 100%;
+    margin-left: 40px;
 }
 
 /* ---------Hamburger Menu ------*/
@@ -95,3 +99,11 @@ header .nav-btn{
 
 
 }
+
+@media screen and (min-width: 1440px) {
+    
+    .header-logo img{
+        margin-left: 17px;
+    }
+  }
+  
