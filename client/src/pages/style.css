@@ -50,7 +50,7 @@ p{
     height: auto;
     position: absolute;
     z-index: 2;
-    left: 5%;
+    left: 10%;
     top: 50%;
     transform: translateY(-50%);
 }
