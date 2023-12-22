@@ -43,8 +43,13 @@ function Contact (){
     return(
         <section id="contact-form" className="contact-containet">
             <div className="contact-text">
-                <h2>¿Te gustaría contactarte con nosotros?</h2>
-                <h2>¡Escríbenos!</h2>
+                <div>
+                  <h2>¿Te gustaría <br/> contactarte con <br/> nosotros?</h2>
+                </div>
+                <div>
+                  <h2>¡Escríbenos!</h2>
+                </div>
+                
                 <div>
                     <img src={right_arrow} alt="right-arrow"/>
                 </div>

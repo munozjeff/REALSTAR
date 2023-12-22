@@ -18,11 +18,13 @@
     width: 45%;
 }
 .contact-text div{
-    width: 50px;
-    height: 90px;
+    margin-bottom: 3rem;
+    width: auto;
+    height: auto;
 }
 .contact-text div img{
     object-fit: cover;
+    width: 50px;
     height: 100%;
 }
 .form-container{
