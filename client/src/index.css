@@ -31,5 +31,7 @@ body{
   box-sizing: border-box;
   overflow-x: hidden;
   background-color: white;
+  display: flex;
+  justify-content: center;
 }
 
