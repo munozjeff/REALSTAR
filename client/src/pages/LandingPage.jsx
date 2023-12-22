@@ -60,7 +60,7 @@ export const LandingPage = () => {
                     </div> */}
                     <div className='landingpage-section-one-title-container'>
                             <H1 value={"JUNTOS CONSTRUIMOS HISTORIAS DE VIDA EXITOSAS"}></H1>
-                            <ButtonSeeMore value={"CONOCE MÁS"} color='#ff0019' hover={true}/>
+                            <ButtonSeeMore value={"CONOCE MÁS"} color='#cf0b06' hover={true}/>
                     </div>
                 {/* </Banner> */}
             </section>
@@ -143,7 +143,7 @@ export const LandingPage = () => {
                 <Banner bannerModel={2} invest={true}>
                     <CardBanner image={image_banner_five} logo={true}/>
                     <div>
-                        <H2 value={"Lo que más nos motiva"} color={"#ff0019"}/>
+                        <H2 value={"Lo que más nos motiva"} color={"#ff8300"}/>
                         <TextWithStyledWords 
                             paragraph='Nos mueve la necesidad desarrollar acciones que 
                                         contrarresten problemáticas derivadas de las 
