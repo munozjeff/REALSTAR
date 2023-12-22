@@ -270,7 +270,7 @@ p{
 
 /* Problem and solution */
 .problem-and-solution{
-    padding: 6rem;
+    padding: 5rem;
     background-color: #eaebed;
     background: url("/src/assets/Logos/Logos_Real_Star-04.png");
     background-position: right;
@@ -300,6 +300,7 @@ p{
     font-family: 'Montserrat', sans-serif;
     margin-top: 4rem;
     font-weight: 500;
+    margin: 1rem 3.8rem;
 
 }
 
