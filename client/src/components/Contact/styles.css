@@ -5,7 +5,7 @@
     background-color: #eaebed;
     color:  black;
     font-family: 'montserrat','sans-serif';
-    padding: 3rem;
+    padding: 3rem 1.7rem;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 5rem;
@@ -87,5 +87,11 @@ form button:hover{
     }
     .contact-containet{
         margin: 0rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .contact-containet{
+        padding: 3rem 3rem;
     }
 }

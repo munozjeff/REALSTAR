@@ -14,14 +14,14 @@
 
 .image-text-container{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 20%;
     
 }
 
 .image-text-container  img{
-    width: 40%;
+    width: 70%;
 }
 .text-cont{
     padding: 1rem 3rem;
