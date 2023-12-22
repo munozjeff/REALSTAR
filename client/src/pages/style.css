@@ -62,6 +62,7 @@ p{
     flex: 1;
     padding-top: 50px;
     margin-bottom: 100px;
+    max-width: 450px;
 }
 .landingpage-section-one-title-container{
     /* background-image: url("/src/assets/Logos/Logos_Real_Star-04.png");
