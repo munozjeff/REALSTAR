@@ -29,7 +29,7 @@ nav a:hover{
     border-bottom: 2px solid #FF9700;
 }
 .nav-class-header{
-    margin-right: 10px;
+    margin-right: 0%;
 
 }
 
@@ -41,7 +41,7 @@ nav a:hover{
 .header-logo img{
     object-fit: cover;
     height: 100%;
-    margin-left: 40px;
+    margin-left: 24%;
 }
 
 /* ---------Hamburger Menu ------*/
@@ -103,7 +103,7 @@ header .nav-btn{
 @media screen and (min-width: 1440px) {
     
     .header-logo img{
-        margin-left: 17px;
+        margin-left: 10%;
     }
   }
   
