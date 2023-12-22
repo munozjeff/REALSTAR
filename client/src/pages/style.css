@@ -87,7 +87,7 @@ p{
     width: 100vw;
 }
 .landingpage-section-two-container{
-    background-color: rgba(240, 248, 255, 0.891);
+    background-color: #eaebedc2;
     padding: 0 10%;
     padding-bottom: 100px;
     padding-top: 50px;
@@ -377,5 +377,10 @@ p{
     }
     .landingpage-section-two-container{
         padding-bottom: 5px;
+    }
+    .our-programs{
+        background-size: 100%;
+        background-position: content;
+        background-position: center;
     }
 }
