@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 .h1-custom{
-    font-size: clamp(1rem,7vw,2.8rem);
+    font-size: clamp(1rem,7vw,3rem);
     color: black;
     font-weight: 900;
     font-family: 'Montserrat', sans-serif;
