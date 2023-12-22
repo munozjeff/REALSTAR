@@ -143,7 +143,7 @@ export const LandingPage = () => {
                 <Banner bannerModel={2} invest={true}>
                     <CardBanner image={image_banner_five} logo={true}/>
                     <div>
-                        <H2 value={"Lo que más nos motiva"} color={"#ff8300"}/>
+                        <H2 value={"Lo que más nos motiva"} color={"#cf0b06"}/>
                         <TextWithStyledWords 
                             paragraph='Nos mueve la necesidad desarrollar acciones que 
                                         contrarresten problemáticas derivadas de las 
