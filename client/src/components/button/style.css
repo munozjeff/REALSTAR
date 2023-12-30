@@ -8,6 +8,7 @@
     font-weight: 800;
     /* color: white; */
     border: none;
+    color: white;
 }
 .grow{
     transition: .5s, color .10s;

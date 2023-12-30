@@ -71,7 +71,7 @@ export const LandingPage = () => {
                         <div>
                             <H4 value={"La Corporación"} />
                             <TextWithStyledWords paragraph={paragraph_1} wordsToStyleOne={paragraph_1_wordsToStyleOne} wordsToStyleTwo={paragraph_1_wordsToStyleTwo}/>
-                            <ButtonSeeMore value={"VER MAS"}/>
+                            {/* <ButtonSeeMore value={"VER MAS"}/> */}
                         </div>
                     </Banner>
                     <Banner invest={true}>

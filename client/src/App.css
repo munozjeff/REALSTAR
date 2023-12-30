@@ -5,5 +5,6 @@
   box-sizing: border-box;
   background-color: white;
   overflow-x: hidden;
-  max-width: 1440px;
+  /* max-width: 1440px; */
+  color: white;
 }
