@@ -40,19 +40,14 @@ export const LandingPage = () => {
     const paragraph_1_wordsToStyleTwo=["estrellas","realmente","exitosas"]
     const paragraph_2= "La Corporación Real Star aplica su método de intervención a todas las iniciativas que realiza, impulsando a través de estrategias deportivas, recreativas y de actividad física el desarrollo humano integral de las personas intervenidas."
     const paragraph_2_wordsToStyleOne = ["desarrollo","humano", "integral"]
-    const [showModal, setShowModal] = useState(false)
-
-    const handlerShowModal = (e) => {
-        console.log(e);
-    }
 
     return (
-    <>
+    <>  <Popup/>
         <Header/>
 
         <div className='body-landingpage'>
 
-            <Popup show={showModal}></Popup>
+            
 
             <section  id='section1' className='landingpage-section-one landingpage-section'>
                 {/* <Banner invest={true}> */}
@@ -260,7 +255,7 @@ export const LandingPage = () => {
             </section> */}
         </div>
 
-        <Contact showNodal={handlerShowModal}/>
+        <Contact/>
         <Footer/>
     </>
 

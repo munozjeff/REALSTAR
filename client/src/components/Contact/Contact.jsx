@@ -1,8 +1,13 @@
-import React,{useState} from "react";
+import React,{useEffect, useState} from "react";
 import "./styles.css"
 import right_arrow from "/src/assets/icons/right-arrow-black.png"
+import { Popup } from "../modal/Pupup";
 
 function Contact ({showNodal=()=>{}}){
+
+  const [show, setShow] = useState(false)
+  const [modalTitle, setModalTitle] = useState("")
+  const [modalMessage, setModalMessage] = useState("")
 
     const [formData, setFormData] = useState({
         name: '',
@@ -26,19 +31,27 @@ function Contact ({showNodal=()=>{}}){
             },
             body: new URLSearchParams(formData).toString(),
           });
-          const datosJSON = null
+          let datosJSON = null
           if (response.ok) {
             datosJSON = await respuesta.json();
-            console.error('succes to send email');
+            // console.error('succes to send email');
+            setModalTitle("FORMULARIO ENVIADO")
+            setModalMessage("Su formulario se envió exitosamente")
             // console.log(datosJSON);
           } else {
             datosJSON = await respuesta.json();
-            console.error('Failed to send email');
+            // console.error('Failed to send email');
             // console.log(datosJSON);
+            setModalTitle("FORMULARIO NO ENVIADO")
+            setModalMessage("Su formulario no se envió")
           }
-          showNodal(datosJSON)
+          
+          setShow(true)
         } catch (error) {
           console.error('Error sending email:', error);
+          setModalTitle("FORMULARIO NO ENVIADO")
+          setModalMessage("Su formulario no se envió")
+          setShow(true)
         }
 
 
@@ -47,6 +60,7 @@ function Contact ({showNodal=()=>{}}){
 
     return(
         <section id="contact-form" className="contact-containet">
+          <Popup show={show} setShow={setShow} modalTitle={modalTitle} message={modalMessage}/>
             <div className="contact-text">
                 <div>
                   <h2>¿Te gustaría <br/> contactarte con <br/> nosotros?</h2>
