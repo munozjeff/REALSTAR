@@ -28,9 +28,12 @@ function Contact (){
           });
     
           if (response.ok) {
-            console.log('Email sent successfully');
+            const datosJSON = await respuesta.json();
+            console.log(datosJSON);
           } else {
+            const datosJSON2 = await respuesta.json();
             console.error('Failed to send email');
+            console.log(datosJSON2);
           }
         } catch (error) {
           console.error('Error sending email:', error);
