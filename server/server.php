@@ -27,25 +27,25 @@
 
         if ($mail_success) {
             http_response_code(200);
-            $response = array(
-                'isSuccessful' => true,
-                'message' => "Email Sent Successfully"
-            );
-            echo (json_encode($response);)
+            // $response = array(
+            //     'isSuccessful' => true,
+            //     'message' => "Email Sent Successfully"
+            // );
+            echo ("Email Sent Successfully");
         } else {
             http_response_code(500);
-            $response = array(
-                'isSuccessful' => false,
-                'message' => "Internal Server Error"
-            );
-            echo (json_encode($response);)
+            // $response = array(
+            //     'isSuccessful' => false,
+            //     'message' => "Internal Server Error"
+            // );
+            echo ("Internal Server Error");
         }
     } else {
         http_response_code(400);
-        $response = array(
-            'isSuccessful' => false,
-            'message' => "Bad Request"
-        );
-        echo (json_encode($response);)
+        // $response = array(
+        //     'isSuccessful' => false,
+        //     'message' => "Bad Request"
+        // );
+        echo ("Bad Request");
     }
 ?>

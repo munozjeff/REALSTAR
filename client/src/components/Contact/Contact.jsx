@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import "./styles.css"
 import right_arrow from "/src/assets/icons/right-arrow-black.png"
 
-function Contact (){
+function Contact ({showNodal=()=>{}}){
 
     const [formData, setFormData] = useState({
         name: '',
@@ -26,15 +26,17 @@ function Contact (){
             },
             body: new URLSearchParams(formData).toString(),
           });
-    
+          const datosJSON = null
           if (response.ok) {
-            const datosJSON = await respuesta.json();
-            console.log(datosJSON);
+            datosJSON = await respuesta.json();
+            console.error('succes to send email');
+            // console.log(datosJSON);
           } else {
-            const datosJSON2 = await respuesta.json();
+            datosJSON = await respuesta.json();
             console.error('Failed to send email');
-            console.log(datosJSON2);
+            // console.log(datosJSON);
           }
+          showNodal(datosJSON)
         } catch (error) {
           console.error('Error sending email:', error);
         }
