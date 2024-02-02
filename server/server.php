@@ -27,13 +27,25 @@
 
         if ($mail_success) {
             http_response_code(200);
-            echo "Email Sent Successfully";
+            $response = array(
+                'isSuccessful' => true,
+                'message' => "Email Sent Successfully"
+            );
+            echo (json_encode($response);)
         } else {
             http_response_code(500);
-            echo "Internal Server Error";
+            $response = array(
+                'isSuccessful' => false,
+                'message' => "Internal Server Error"
+            );
+            echo (json_encode($response);)
         }
     } else {
         http_response_code(400);
-        echo "Bad Request";
+        $response = array(
+            'isSuccessful' => false,
+            'message' => "Bad Request"
+        );
+        echo (json_encode($response);)
     }
 ?>

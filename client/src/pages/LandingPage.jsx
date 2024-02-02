@@ -32,6 +32,7 @@ import icon_03 from "/src/assets/icons/Asset-3.png"
 import icon_04 from "/src/assets/icons/Asset-2.png"
 import { Contact } from '../components/Contact/Contact'
 import { CarouselBootstrap } from '../components/carouselBootstrap/CarouselBootstrap'
+import { Popup } from '../components/modal/Pupup'
 
 export const LandingPage = () => {
     const paragraph_1= " En la Corporación Real Star le apostamos a que, a través del deporte, la recreación y la actividad física cada día más niños, niñas, dolescentes, jóvenes y adultos logren ser estrellas realmente exitosas, con capacidades para alcanzar y sostener su propósito de vida y desde su quehacer aporten significativamente al desarrollo social sostenible de Colombia."
@@ -44,6 +45,9 @@ export const LandingPage = () => {
         <Header/>
 
         <div className='body-landingpage'>
+
+            <Popup></Popup>
+
             <section  id='section1' className='landingpage-section-one landingpage-section'>
                 {/* <Banner invest={true}> */}
                     {/* <div className='landingpage-section-one-carousel-container'>
